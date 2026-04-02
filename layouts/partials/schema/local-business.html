@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "description": "{{ .Site.Params.description }}",
+  "areaServed": [
+    {{ range $i, $area := .Site.Params.serviceAreas }}{{ if $i }},{{ end }}
+    {
+      "@type": "City",
+      "name": "{{ $area.name }}"
+    }{{ end }}
+  ],
+  "hasCredential": [
+    {{ range $i, $lic := .Site.Params.licenses }}{{ if $i }},{{ end }}
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "ROC {{ $lic.number }} — {{ $lic.type }}"
+    }{{ end }}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+  }
+}
+</script>

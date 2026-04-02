@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto px-4 py-12">
+  <div class="prose max-w-none">
+    {{ .Content }}
+  </div>
+  {{ with .Params.faq }}
+    {{ partial "faq.html" $ }}
+  {{ end }}
+</article>
+{{ partial "service-areas.html" . }}
+{{ partial "cta.html" . }}
+{{ end }}

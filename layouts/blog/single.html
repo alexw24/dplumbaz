@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="max-w-3xl mx-auto px-4 py-12">
+  <header class="mb-8">
+    <time class="text-sm text-gray-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+  </header>
+  <div class="prose max-w-none">
+    {{ .Content }}
+  </div>
+</article>
+{{ partial "cta.html" . }}
+{{ end }}
