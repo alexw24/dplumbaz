@@ -1,0 +1,140 @@
+baseURL = "https://dplumbaz.com/"
+languageCode = "en-us"
+title = "Diagnostic Plumbing"
+
+[params]
+phone = "(480) 220-1266"
+phoneRaw = "4802201266"
+description = "Locally owned plumbing company serving the Phoenix East Valley. Specializing in drain cleaning, water heaters, repipes, water quality solutions, and remodeling."
+tagline = "Servicing Maricopa and Pinal Counties"
+
+[[params.licenses]]
+number = "#332463"
+type = "B-3 General Remodeling"
+
+[[params.licenses]]
+number = "#327364"
+type = "CR-37 Plumbing"
+
+[[params.licenses]]
+number = "#327365"
+type = "CR-61 Carpentry"
+
+[[params.serviceAreas]]
+name = "Gilbert"
+url = "/plumber-gilbert-az/"
+
+[[params.serviceAreas]]
+name = "Chandler"
+url = "/plumber-chandler-az/"
+
+[[params.serviceAreas]]
+name = "Mesa"
+url = "/plumber-mesa-az/"
+
+[[params.serviceAreas]]
+name = "Scottsdale"
+url = "/plumber-scottsdale-az/"
+
+[[params.serviceAreas]]
+name = "Tempe"
+url = "/plumber-tempe-az/"
+
+[[params.serviceAreas]]
+name = "Queen Creek"
+url = "/plumber-queen-creek-az/"
+
+[[params.serviceAreas]]
+name = "Phoenix"
+url = "/plumber-phoenix-az/"
+
+[[menus.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menus.main]]
+name = "About Us"
+url = "/about/"
+weight = 2
+
+[[menus.main]]
+name = "Blog"
+url = "/blog/"
+parent = "About Us"
+weight = 1
+
+[[menus.main]]
+name = "Services"
+url = "/services/"
+weight = 3
+
+[[menus.main]]
+name = "Drain Cleaning"
+url = "/residential-plumbing/drain-cleaning/"
+parent = "Services"
+weight = 1
+
+[[menus.main]]
+name = "Water Heaters"
+url = "/residential-plumbing/water-heaters/"
+parent = "Services"
+weight = 2
+
+[[menus.main]]
+name = "Repipes"
+url = "/residential-plumbing/repipes/"
+parent = "Services"
+weight = 3
+
+[[menus.main]]
+name = "Plumbing Repairs"
+url = "/residential-plumbing/plumbing-repairs/"
+parent = "Services"
+weight = 4
+
+[[menus.main]]
+name = "Remodeling"
+url = "/services/remodeling/"
+parent = "Services"
+weight = 5
+
+[[menus.main]]
+name = "Water Quality"
+url = "/water-quality/"
+weight = 4
+
+[[menus.main]]
+name = "Water Softeners"
+url = "/water-quality/water-softeners/"
+parent = "Water Quality"
+weight = 1
+
+[[menus.main]]
+name = "Whole Home Filtration"
+url = "/water-quality/whole-home-filtration/"
+parent = "Water Quality"
+weight = 2
+
+[[menus.main]]
+name = "Reverse Osmosis"
+url = "/water-quality/reverse-osmosis/"
+parent = "Water Quality"
+weight = 3
+
+[[menus.main]]
+name = "Commercial"
+url = "/commercial-hospitality/"
+weight = 5
+
+[[menus.main]]
+name = "Contact"
+url = "/contact/"
+weight = 6
+
+[sitemap]
+changeFreq = "weekly"
+priority = 0.5
+
+[markup.goldmark.renderer]
+unsafe = true
