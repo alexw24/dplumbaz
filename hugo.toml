@@ -9,16 +9,19 @@ description = "Locally owned plumbing company serving the Phoenix East Valley. S
 tagline = "Servicing Maricopa and Pinal Counties"
 
 [[params.licenses]]
-number = "#332463"
-type = "B-3 General Remodeling"
-
-[[params.licenses]]
 number = "#327364"
 type = "CR-37 Plumbing"
+scope = "Full residential & commercial plumbing"
+
+[[params.licenses]]
+number = "#332463"
+type = "B-3 General Remodeling"
+scope = "Full remodeling and repair"
 
 [[params.licenses]]
 number = "#327365"
 type = "CR-61 Carpentry"
+scope = "Finish carpentry, remodeling, repair"
 
 [[params.serviceAreas]]
 name = "Gilbert"
