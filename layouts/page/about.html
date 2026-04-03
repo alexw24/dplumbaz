@@ -1,0 +1,118 @@
+{{ define "main" }}
+
+{{/* ── Intro: team photo + opening copy ── */}}
+<section class="py-16 bg-white">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="flex flex-col md:flex-row gap-10 items-center">
+
+      {{/* Team photo */}}
+      {{ with .Params.intro_image }}
+        {{ $img := resources.Get . }}
+        {{ with $img }}
+          {{ $sm := .Fill "480x320 webp" }}
+          {{ $md := .Fill "640x426 webp" }}
+          {{ $fallback := .Fill "640x426" }}
+          <div class="md:w-2/5 flex-shrink-0">
+            <picture>
+              <source type="image/webp"
+                      srcset="{{ $sm.RelPermalink }} 480w, {{ $md.RelPermalink }} 640w"
+                      sizes="(min-width: 768px) 40vw, 100vw">
+              <img src="{{ $fallback.RelPermalink }}"
+                   alt="{{ $.Params.intro_image_alt | default $.Title }}"
+                   class="w-full rounded-2xl shadow-lg"
+                   loading="lazy" decoding="async">
+            </picture>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      <div class="md:w-3/5">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4">About Diagnostic Plumbing</h2>
+        <div class="text-lg text-gray-700 leading-relaxed">{{ .Summary }}</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{/* ── The Diagnostic Difference ── */}}
+{{ $parts := split .RawContent "<!--more-->" }}
+{{ if gt (len $parts) 1 }}
+<section class="py-16 bg-gray-50">
+  <div class="mx-auto max-w-4xl px-4 prose prose-lg prose-headings:text-blue-900 prose-a:text-blue-700 prose-li:text-gray-700">
+    {{ index $parts 1 | .RenderString }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Meet the Team ── */}}
+{{ with .Params.team }}
+<section class="py-16 bg-white">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-3xl font-bold text-blue-900 text-center mb-12">Meet the Team</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      {{ range . }}
+        {{ $member := . }}
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          {{/* Photo */}}
+          {{ with .image }}
+            {{ $img := resources.Get . }}
+            {{ with $img }}
+              {{ $sm := .Fill "400x400 webp" }}
+              {{ $md := .Fill "600x600 webp" }}
+              {{ $fallback := .Fill "600x600" }}
+              <picture>
+                <source type="image/webp"
+                        srcset="{{ $sm.RelPermalink }} 400w, {{ $md.RelPermalink }} 600w"
+                        sizes="(min-width: 768px) 50vw, 100vw">
+                <img src="{{ $fallback.RelPermalink }}"
+                     alt="{{ $member.name }}, {{ $member.role }} at Diagnostic Plumbing"
+                     class="w-full aspect-square object-cover"
+                     loading="lazy" decoding="async">
+              </picture>
+            {{ end }}
+          {{ end }}
+
+          {{/* Bio */}}
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-900">{{ .name }}</h3>
+            <p class="text-sm font-medium text-blue-600 mb-3">{{ .role }}</p>
+            <p class="text-gray-600 leading-relaxed">{{ .bio }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Licenses ── */}}
+<section class="py-16 bg-gray-50">
+  <div class="mx-auto max-w-4xl px-4">
+    <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">Licensed, Bonded & Insured</h2>
+    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+      Diagnostic Plumbing holds three active Arizona ROC licenses. That triple licensing means we can own your project from start to finish — we hold all the responsibility.
+    </p>
+
+    <div class="grid sm:grid-cols-3 gap-6 mb-8">
+      {{ range .Site.Params.licenses }}
+      <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
+        <p class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-1">{{ .type }}</p>
+        <p class="text-2xl font-bold text-blue-900">{{ .number }}</p>
+        <p class="text-sm text-gray-500 mt-2">{{ .scope }}</p>
+      </div>
+      {{ end }}
+    </div>
+
+    <p class="text-center text-gray-600 text-sm">
+      All licenses are active and verifiable through the
+      <a href="https://roc.az.gov" class="text-blue-700 underline hover:text-blue-900" target="_blank" rel="noopener">Arizona Registrar of Contractors</a>.
+      We are bonded and insured on every job.
+    </p>
+  </div>
+</section>
+
+{{/* ── CTA ── */}}
+{{ partial "cta.html" . }}
+{{ end }}

@@ -1,7 +1,28 @@
 {{ define "main" }}
 <!-- Hero Section -->
-<section class="bg-blue-900 text-white py-20">
-  <div class="max-w-6xl mx-auto px-4 text-center">
+{{ $img := false }}
+{{ with .Params.hero_image }}
+  {{ $img = resources.Get . }}
+{{ end }}
+<section class="relative bg-blue-900 text-white py-24 text-center overflow-hidden">
+  {{ with $img }}
+    {{ $sm := .Fill "640x360 webp" }}
+    {{ $md := .Fill "1024x420 webp" }}
+    {{ $lg := .Fill "1920x640 webp" }}
+    {{ $fallback := .Fill "1920x640" }}
+    <picture>
+      <source type="image/webp"
+              srcset="{{ $sm.RelPermalink }} 640w, {{ $md.RelPermalink }} 1024w, {{ $lg.RelPermalink }} 1920w"
+              sizes="100vw">
+      <img src="{{ $fallback.RelPermalink }}"
+           alt=""
+           class="absolute inset-0 h-full w-full object-cover"
+           fetchpriority="high"
+           decoding="async">
+    </picture>
+    <div class="absolute inset-0 bg-blue-900/45" aria-hidden="true"></div>
+  {{ end }}
+  <div class="relative max-w-6xl mx-auto px-4">
     <h1 class="text-4xl md:text-5xl font-bold mb-4">East Valley's Trusted Plumbing Experts</h1>
     <p class="text-xl mb-8 text-blue-100">Diagnostic Plumbing — locally owned, serving Gilbert, Chandler, Mesa &amp; beyond.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,10 +1,28 @@
-{{ $heroImage := .Params.hero_image }}
-<section class="relative bg-blue-900 text-white py-16 text-center overflow-hidden"
-  {{ with $heroImage }}style="background-image: url('{{ . }}'); background-size: cover; background-position: center;"{{ end }}>
+{{/* Resolve hero image from assets/ via Hugo image processing */}}
+{{ $img := false }}
+{{ with .Params.hero_image }}
+  {{ $img = resources.Get . }}
+{{ end }}
 
-  {{/* Dark overlay when a background image is set */}}
-  {{ with $heroImage }}
-  <div class="absolute inset-0 bg-blue-900/75" aria-hidden="true"></div>
+<section class="relative bg-blue-900 text-white py-24 text-center overflow-hidden">
+
+  {{ with $img }}
+    {{/* Generate responsive WebP + fallback */}}
+    {{ $sm := .Fill "640x360 webp" }}
+    {{ $md := .Fill "1024x420 webp" }}
+    {{ $lg := .Fill "1920x640 webp" }}
+    {{ $fallback := .Fill "1920x640" }}
+    <picture>
+      <source type="image/webp"
+              srcset="{{ $sm.RelPermalink }} 640w, {{ $md.RelPermalink }} 1024w, {{ $lg.RelPermalink }} 1920w"
+              sizes="100vw">
+      <img src="{{ $fallback.RelPermalink }}"
+           alt=""
+           class="absolute inset-0 h-full w-full object-cover"
+           fetchpriority="high"
+           decoding="async">
+    </picture>
+    <div class="absolute inset-0 bg-blue-900/45" aria-hidden="true"></div>
   {{ end }}
 
   <div class="relative mx-auto max-w-4xl px-4">
