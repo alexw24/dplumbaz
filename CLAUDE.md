@@ -7,7 +7,7 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
 - **Company:** Diagnostic Plumbing — locally owned, East Valley AZ
 - **Phone:** (480) 220-1266 ← always use this. Old WP files may show (480) 277-4501 — that is wrong.
 - **Service Area:** Gilbert, Chandler, Mesa, Scottsdale, Tempe, Queen Creek, Phoenix
-- **ROC Licenses:** #332463 (B-3 General Remodeling), #327364 (CR-37 Plumbing), #327365 (CR-61 Carpentry)
+- **ROC Licenses:** #332463 (B-3 General Remodeling), #327364 (CR-37 Plumbing), #327365 (CR-61 Carpentry, Remodeling & Repairs — sub-$50K projects, CR = commercial + residential; R side redundant with B-3, kept for commercial coverage)
 - **Key Differentiators:** High-speed drain cleaning (first-mover in East Valley), triple-licensed (plumbing + remodeling + carpentry), water softener expertise
 
 ## Tech Stack
@@ -70,11 +70,11 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
 |------|-----|------|
 | Home | / | — |
 | Residential Plumbing | /residential-plumbing/ | services (SEO hub, not in nav) |
-| Drain Cleaning | /residential-plumbing/drain-cleaning/ | services |
-| High-Speed Drain Cleaning | /residential-plumbing/high-speed-drain-cleaning/ | services (linked from Drain Cleaning) |
-| Water Heaters | /residential-plumbing/water-heaters/ | services |
-| Repipes | /residential-plumbing/repipes/ | services |
-| Plumbing Repairs | /residential-plumbing/plumbing-repairs/ | services |
+| Drain Cleaning | /services/drain-cleaning/ | services |
+| High-Speed Drain Cleaning | /services/high-speed-drain-cleaning/ | services (linked from Drain Cleaning) |
+| Water Heaters | /services/water-heaters/ | services |
+| Repipes | /services/repipes/ | services |
+| Plumbing Repairs | /services/plumbing-repairs/ | services |
 | Services hub | /services/ | services |
 | Remodeling | /services/remodeling/ | services |
 | Water Quality hub | /water-quality/ | services |
@@ -135,7 +135,7 @@ answer = "Another answer."
 
 - **High-speed drain cleaning** is the primary differentiator — East Valley competitors are not marketing this technology
 - **Water softeners / water quality** are a high-margin growth area — East Valley hard water (200+ mg/L) creates strong demand with relatively low SEO competition
-- **Triple license** (plumbing + remodeling + carpentry) enables full remodels without subcontracting — lead with this as differentiator vs. franchises
+- **Triple license** (plumbing + remodeling + carpentry) — B-3 lets Diagnostic Plumbing GC full remodels. On the site, frame as "one company, one point of contact." Do NOT mention subcontractors (positive or negative) — that's disclosed in proposals, not on the website. The site's job is to get the lead.
 - **One brand: Diagnostic Plumbing** — remodeling is a service, not a separate DBA
 - **Blog strategy:** informational content → service page traffic (see `Strategy/CONTENT-CALENDAR.md` in vault)
 - **Service area pages** at `/plumber-{city}-az/` — footer + internal links only, not nav

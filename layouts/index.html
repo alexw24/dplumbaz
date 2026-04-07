@@ -4,7 +4,7 @@
 {{ with .Params.hero_image }}
   {{ $img = resources.Get . }}
 {{ end }}
-<section class="relative bg-blue-900 text-white py-24 text-center overflow-hidden">
+<section class="relative bg-brand-heading text-white py-24 text-center overflow-hidden">
   {{ with $img }}
     {{ $sm := .Fill "640x360 webp" }}
     {{ $md := .Fill "1024x420 webp" }}
@@ -20,33 +20,40 @@
            fetchpriority="high"
            decoding="async">
     </picture>
-    <div class="absolute inset-0 bg-blue-900/45" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-brand-heading/45" aria-hidden="true"></div>
   {{ end }}
   <div class="relative max-w-6xl mx-auto px-4">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">East Valley's Trusted Plumbing Experts</h1>
-    <p class="text-xl mb-8 text-blue-100">Diagnostic Plumbing — locally owned, serving Gilbert, Chandler, Mesa &amp; beyond.</p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/contact/" class="inline-block border-2 border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-blue-900 transition">Request a Service</a>
-      <a href="tel:4802201266" class="inline-block bg-yellow-500 text-black px-8 py-3 rounded font-bold hover:bg-yellow-400 transition">Call (480) 220-1266</a>
+    <div class="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+      <div class="lg:flex-1 text-center lg:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">East Valley's Trusted Plumbing Experts</h1>
+        <p class="text-xl mb-8 text-brand-surface">Diagnostic Plumbing — locally owned, serving Gilbert, Chandler, Mesa &amp; beyond.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 lg:mb-0">
+          <a href="/contact/" class="inline-block border-2 border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-brand-heading transition">Request a Service</a>
+          <a href="tel:4802201266" class="inline-block bg-brand-cta hover:bg-brand-accent text-white px-8 py-3 rounded font-bold transition">Call (480) 220-1266</a>
+        </div>
+      </div>
+      <div class="lg:w-[420px] lg:shrink-0">
+        {{ partial "forms/home.html" . }}
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Services Grid -->
-<section class="py-16 bg-gray-50">
+<section class="py-16 bg-brand-surface">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
     <div class="grid md:grid-cols-3 gap-8">
       {{ range (slice
-        (dict "title" "Drain Cleaning" "desc" "Professional drain cleaning and high-speed solutions." "url" "/residential-plumbing/drain-cleaning/")
-        (dict "title" "Water Heaters" "desc" "Repair and replacement for all water heater types." "url" "/residential-plumbing/water-heaters/")
-        (dict "title" "Repipes" "desc" "Whole-home repiping with modern materials." "url" "/residential-plumbing/repipes/")
+        (dict "title" "Drain Cleaning" "desc" "Professional drain cleaning and high-speed solutions." "url" "/services/drain-cleaning/")
+        (dict "title" "Water Heaters" "desc" "Repair and replacement for all water heater types." "url" "/services/water-heaters/")
+        (dict "title" "Repipes" "desc" "Whole-home repiping with modern materials." "url" "/services/repipes/")
         (dict "title" "Water Softeners" "desc" "Combat East Valley hard water with expert solutions." "url" "/water-quality/water-softeners/")
-        (dict "title" "Plumbing Repairs" "desc" "Leak detection, fixture repair, and general plumbing." "url" "/residential-plumbing/plumbing-repairs/")
+        (dict "title" "Plumbing Repairs" "desc" "Leak detection, fixture repair, and general plumbing." "url" "/services/plumbing-repairs/")
         (dict "title" "Remodeling" "desc" "Bathroom and kitchen remodeling services." "url" "/services/remodeling/")
       ) }}
       <a href="{{ .url }}" class="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-blue-900 mb-2">{{ .title }}</h3>
+        <h3 class="text-xl font-semibold text-brand-heading mb-2">{{ .title }}</h3>
         <p class="text-gray-600">{{ .desc }}</p>
       </a>
       {{ end }}
@@ -60,8 +67,8 @@
     <h2 class="text-3xl font-bold text-center mb-12">Why Choose Diagnostic Plumbing?</h2>
     <div class="grid md:grid-cols-3 gap-8 text-center">
       <div>
-        <h3 class="text-xl font-semibold mb-2">Triple Licensed</h3>
-        <p class="text-gray-600">Plumbing, remodeling, and carpentry — all under one roof with full ROC licensing.</p>
+        <h3 class="text-xl font-semibold mb-2">One Company, Start to Finish</h3>
+        <p class="text-gray-600">Triple-licensed for plumbing, remodeling, and carpentry — one point of contact for everything.</p>
       </div>
       <div>
         <h3 class="text-xl font-semibold mb-2">High-Speed Drain Cleaning</h3>
@@ -75,9 +82,12 @@
   </div>
 </section>
 
-<!-- CTA -->
-{{ partial "cta.html" . }}
+<!-- Licenses -->
+{{ partial "licenses.html" . }}
 
 <!-- Service Areas -->
 {{ partial "service-areas.html" . }}
+
+<!-- CTA -->
+{{ partial "cta.html" . }}
 {{ end }}

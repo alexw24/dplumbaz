@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col overflow-x-hidden">
   {{ partial "header.html" . }}
   {{ if not .IsHome }}
     {{ partial "hero.html" . }}

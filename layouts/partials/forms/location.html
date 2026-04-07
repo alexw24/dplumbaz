@@ -1,0 +1,60 @@
+{{- /* Location / Service Area form — JobTread web form */ -}}
+<form data-jobtread-web-form="true" data-key="22TM8kLqb42TfvC5zdcJCjVMgaghfpiQzV"
+  class="bg-white rounded-lg shadow-lg p-5 space-y-3">
+  <h2 class="text-lg font-bold text-brand-heading mb-1">Request Service in {{ .Title }}</h2>
+
+  <div class="grid grid-cols-2 gap-3">
+    <label class="block">
+      <span class="block text-sm font-medium text-brand-heading mb-0.5">Name <span class="text-red-500">*</span></span>
+      <input type="text" required name="contact.name"
+        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+    </label>
+    <label class="block">
+      <span class="block text-sm font-medium text-brand-heading mb-0.5">Phone <span class="text-red-500">*</span></span>
+      <input type="tel" required name="contact.custom.22Nsehd3v83v"
+        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+    </label>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    <label class="block">
+      <span class="block text-sm font-medium text-brand-heading mb-0.5">Email</span>
+      <input type="email" name="contact.custom.22NsehctsKJM"
+        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+    </label>
+    <label class="block">
+      <span class="block text-sm font-medium text-brand-heading mb-0.5">Address <span class="text-red-500">*</span></span>
+      <input type="text" required name="location.address"
+        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+    </label>
+  </div>
+
+  <label class="block">
+    <span class="block text-sm font-medium text-brand-heading mb-0.5">How can we help?</span>
+    <select name="job.custom.22PV9jBV4WtX"
+      class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+      <option value="" disabled selected>Select...</option>
+      <option value="Emergency Plumbing">Emergency Plumbing</option>
+      <option value="Drain Issues">Drain Issues</option>
+      <option value="Water Treatment">Water Treatment</option>
+      <option value="Maintenance">Maintenance</option>
+      <option value="Other">Other</option>
+    </select>
+  </label>
+
+  <label class="block">
+    <span class="block text-sm font-medium text-brand-heading mb-0.5">Notes <span class="font-normal text-gray-400">(optional)</span></span>
+    <input type="text" name="job.description"
+      class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+  </label>
+
+  <label class="block">
+    <span class="block text-sm font-medium text-brand-heading mb-0.5">Files &amp; photos <span class="font-normal text-gray-400">(optional)</span></span>
+    <input type="file" multiple name="account.files"
+      class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+  </label>
+
+  <button type="submit" data-submit-button="true"
+    class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded transition cursor-pointer">REQUEST SERVICE</button>
+</form>
+<script async src='https://app.jobtread.com/web-form.js'></script>

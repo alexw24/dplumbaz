@@ -1,2 +1,22 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  /* ── Brand tokens ─────────────────────────────────────────────
+     Change these to restyle the entire site at once.
+     brand-heading : section headings, stat numbers, card titles
+     brand-accent  : eyebrows, links, icons, role labels
+     brand-surface : alternate section backgrounds (off-white)
+  ────────────────────────────────────────────────────────────── */
+  --color-brand-heading: #3d5e2e;   /* deep earthy green — top bar, headings */
+  --color-brand-accent:  #537a44;   /* medium earthy green — links, icons, CTA */
+  --color-brand-surface: #e8dcc6;   /* warm tan — alternate section backgrounds */
+  --color-brand-cta:     #6b6055;   /* strong warm gray */
+  --color-brand-nav:     #f2e9d5;   /* light warm tan — nav bar */
+  --color-brand-nav-hover: #e2d9c0; /* warm tan hover — nav link backgrounds */
+}
+
+html, body {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
