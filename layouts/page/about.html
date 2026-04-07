@@ -27,7 +27,7 @@
       {{ end }}
 
       <div class="md:w-3/5">
-        <h2 class="text-2xl font-bold text-blue-900 mb-4">About Diagnostic Plumbing</h2>
+        <h2 class="text-2xl font-bold text-brand-heading mb-4">Locally owned and operated.</h2>
         <div class="text-lg text-gray-700 leading-relaxed">{{ .Summary }}</div>
       </div>
 
@@ -35,21 +35,31 @@
   </div>
 </section>
 
-{{/* ── The Diagnostic Difference ── */}}
-{{ $parts := split .RawContent "<!--more-->" }}
-{{ if gt (len $parts) 1 }}
-<section class="py-16 bg-gray-50">
-  <div class="mx-auto max-w-4xl px-4 prose prose-lg prose-headings:text-blue-900 prose-a:text-blue-700 prose-li:text-gray-700">
-    {{ index $parts 1 | .RenderString }}
+{{/* ── Trust Stats Bar ── */}}
+<div class="bg-white border-y border-gray-100 py-10">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 text-center">
+      <div class="py-6 sm:py-0 sm:px-8">
+        <p class="text-3xl font-bold text-brand-heading">3rd Generation</p>
+        <p class="text-sm text-gray-500 mt-1">Family-owned trade</p>
+      </div>
+      <div class="py-6 sm:py-0 sm:px-8">
+        <p class="text-3xl font-bold text-brand-heading">3 ROC Licenses</p>
+        <p class="text-sm text-gray-500 mt-1">Plumbing · Remodeling · Carpentry</p>
+      </div>
+      <div class="py-6 sm:py-0 sm:px-8">
+        <p class="text-3xl font-bold text-brand-heading">East Valley AZ</p>
+        <p class="text-sm text-gray-500 mt-1">Serving since 1991</p>
+      </div>
+    </div>
   </div>
-</section>
-{{ end }}
+</div>
 
 {{/* ── Meet the Team ── */}}
 {{ with .Params.team }}
 <section class="py-16 bg-white">
   <div class="mx-auto max-w-6xl px-4">
-    <h2 class="text-3xl font-bold text-blue-900 text-center mb-12">Meet the Team</h2>
+    <h2 class="text-3xl font-bold text-brand-heading text-center mb-12">Meet the Team</h2>
 
     <div class="grid md:grid-cols-2 gap-10">
       {{ range . }}
@@ -76,8 +86,8 @@
 
           {{/* Bio */}}
           <div class="p-6">
-            <h3 class="text-xl font-bold text-blue-900">{{ .name }}</h3>
-            <p class="text-sm font-medium text-blue-600 mb-3">{{ .role }}</p>
+            <h3 class="text-xl font-bold text-brand-heading">{{ .name }}</h3>
+            <p class="text-sm font-medium text-brand-accent mb-3">{{ .role }}</p>
             <p class="text-gray-600 leading-relaxed">{{ .bio }}</p>
           </div>
         </div>
@@ -87,31 +97,25 @@
 </section>
 {{ end }}
 
-{{/* ── Licenses ── */}}
-<section class="py-16 bg-gray-50">
+{{/* ── The Diagnostic Difference ── */}}
+{{ $parts := split .RawContent "<!--more-->" }}
+{{ if gt (len $parts) 1 }}
+<section class="py-16 bg-brand-surface">
   <div class="mx-auto max-w-4xl px-4">
-    <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">Licensed, Bonded & Insured</h2>
-    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-      Diagnostic Plumbing holds three active Arizona ROC licenses. That triple licensing means we can own your project from start to finish — we hold all the responsibility.
-    </p>
-
-    <div class="grid sm:grid-cols-3 gap-6 mb-8">
-      {{ range .Site.Params.licenses }}
-      <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
-        <p class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-1">{{ .type }}</p>
-        <p class="text-2xl font-bold text-blue-900">{{ .number }}</p>
-        <p class="text-sm text-gray-500 mt-2">{{ .scope }}</p>
-      </div>
-      {{ end }}
+    <p class="text-sm font-semibold tracking-widest text-brand-accent uppercase mb-2">HOW WE WORK</p>
+    <div class="border-t-4 border-brand-accent rounded-t-sm mb-8"></div>
+    <div class="prose prose-lg prose-headings:text-brand-heading prose-a:text-brand-accent prose-li:text-gray-700 prose-li:marker:text-brand-accent">
+      {{ index $parts 1 | .RenderString }}
     </div>
-
-    <p class="text-center text-gray-600 text-sm">
-      All licenses are active and verifiable through the
-      <a href="https://roc.az.gov" class="text-blue-700 underline hover:text-blue-900" target="_blank" rel="noopener">Arizona Registrar of Contractors</a>.
-      We are bonded and insured on every job.
-    </p>
   </div>
 </section>
+{{ end }}
+
+{{/* ── Licenses ── */}}
+{{ partial "licenses.html" . }}
+
+{{/* ── Service Areas ── */}}
+{{ partial "service-areas.html" . }}
 
 {{/* ── CTA ── */}}
 {{ partial "cta.html" . }}

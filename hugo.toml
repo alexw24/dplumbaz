@@ -12,16 +12,19 @@ tagline = "Servicing Maricopa and Pinal Counties"
 number = "#327364"
 type = "CR-37 Plumbing"
 scope = "Full residential & commercial plumbing"
+url = "https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0ot0000000NWuuAAG"
 
 [[params.licenses]]
 number = "#332463"
 type = "B-3 General Remodeling"
 scope = "Full remodeling and repair"
+url = "https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0ot0000001QfAtAAK"
 
 [[params.licenses]]
 number = "#327365"
 type = "CR-61 Carpentry"
-scope = "Finish carpentry, remodeling, repair"
+scope = "Dual-commercial remodeling, repairs & carpentry"
+url = "https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0ot0000000NWuvAAG"
 
 [[params.serviceAreas]]
 name = "Gilbert"
@@ -51,6 +54,10 @@ url = "/plumber-queen-creek-az/"
 name = "Phoenix"
 url = "/plumber-phoenix-az/"
 
+[[params.serviceAreas]]
+name = "San Tan Valley"
+url = "/plumber-san-tan-valley-az/"
+
 [[menus.main]]
 name = "Home"
 url = "/"
@@ -64,8 +71,7 @@ weight = 2
 [[menus.main]]
 name = "Blog"
 url = "/blog/"
-parent = "About Us"
-weight = 1
+weight = 25
 
 [[menus.main]]
 name = "Services"
@@ -74,25 +80,25 @@ weight = 3
 
 [[menus.main]]
 name = "Drain Cleaning"
-url = "/residential-plumbing/drain-cleaning/"
+url = "/services/drain-cleaning/"
 parent = "Services"
 weight = 1
 
 [[menus.main]]
 name = "Water Heaters"
-url = "/residential-plumbing/water-heaters/"
+url = "/services/water-heaters/"
 parent = "Services"
 weight = 2
 
 [[menus.main]]
 name = "Repipes"
-url = "/residential-plumbing/repipes/"
+url = "/services/repipes/"
 parent = "Services"
 weight = 3
 
 [[menus.main]]
 name = "Plumbing Repairs"
-url = "/residential-plumbing/plumbing-repairs/"
+url = "/services/plumbing-repairs/"
 parent = "Services"
 weight = 4
 

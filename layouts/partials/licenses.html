@@ -1,0 +1,26 @@
+<section class="py-16 bg-brand-surface">
+  <div class="mx-auto max-w-4xl px-4">
+    <p class="text-sm font-semibold tracking-widest text-brand-accent uppercase mb-2 text-center">LICENSED & TRUSTED</p>
+    <h2 class="text-3xl font-bold text-brand-heading text-center mb-4">Licensed, Bonded & Insured</h2>
+    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+      Diagnostic Plumbing holds three active Arizona ROC licenses. That triple licensing means we can own your project from start to finish — we hold all the responsibility.
+    </p>
+
+    <div class="grid sm:grid-cols-3 gap-6 mb-8">
+      {{ range .Site.Params.licenses }}
+      <a href="{{ .url }}" target="_blank" rel="noopener"
+         class="block bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-brand-accent transition-all">
+        <p class="text-sm font-semibold text-brand-accent uppercase tracking-wider mb-1">{{ .type }}</p>
+        <p class="text-2xl font-bold text-brand-heading">{{ .number }}</p>
+        <p class="text-sm text-gray-500 mt-2">{{ .scope }}</p>
+      </a>
+      {{ end }}
+    </div>
+
+    <p class="text-center text-gray-600 text-sm">
+      All licenses are active and verifiable through the
+      <a href="https://roc.az.gov" class="text-brand-accent underline hover:text-brand-heading" target="_blank" rel="noopener">Arizona Registrar of Contractors</a>.
+      We are bonded and insured on every job.
+    </p>
+  </div>
+</section>

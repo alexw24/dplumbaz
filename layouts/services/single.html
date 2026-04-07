@@ -7,6 +7,12 @@
     {{ partial "faq.html" $ }}
   {{ end }}
 </article>
+<section class="py-12 bg-brand-surface">
+  <div class="max-w-xl mx-auto px-4">
+    {{ $form := .Params.form | default "generic" }}
+    {{ partial (printf "forms/%s.html" $form) . }}
+  </div>
+</section>
 {{ partial "service-areas.html" . }}
 {{ partial "cta.html" . }}
 {{ end }}

@@ -14,5 +14,12 @@
     {{ end }}
   </div>
 </div>
+{{ with .Params.form }}
+<section class="py-12 bg-brand-surface">
+  <div class="max-w-xl mx-auto px-4">
+    {{ partial (printf "forms/%s.html" .) $ }}
+  </div>
+</section>
+{{ end }}
 {{ partial "cta.html" . }}
 {{ end }}

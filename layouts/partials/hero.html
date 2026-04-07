@@ -4,7 +4,7 @@
   {{ $img = resources.Get . }}
 {{ end }}
 
-<section class="relative bg-blue-900 text-white py-24 text-center overflow-hidden">
+<section class="relative bg-brand-heading text-white py-24 text-center overflow-hidden">
 
   {{ with $img }}
     {{/* Generate responsive WebP + fallback */}}
@@ -22,7 +22,7 @@
            fetchpriority="high"
            decoding="async">
     </picture>
-    <div class="absolute inset-0 bg-blue-900/45" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-brand-heading/45" aria-hidden="true"></div>
   {{ end }}
 
   <div class="relative mx-auto max-w-4xl px-4">
@@ -31,16 +31,16 @@
     </h1>
 
     {{ with .Params.hero_subtitle }}
-    <p class="text-lg sm:text-xl text-blue-200 mb-8 max-w-2xl mx-auto">{{ . }}</p>
+    <p class="text-lg sm:text-xl text-brand-surface mb-8 max-w-2xl mx-auto">{{ . }}</p>
     {{ end }}
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
       <a href="/contact/"
-         class="inline-block border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold rounded px-6 py-3 transition-colors">
+         class="inline-block border-2 border-white text-white hover:bg-white hover:text-brand-heading font-semibold rounded px-6 py-3 transition-colors">
         Request a Service
       </a>
       <a href="tel:4802201266"
-         class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-bold rounded px-6 py-3 transition-colors">
+         class="inline-block bg-brand-cta hover:bg-brand-accent text-white font-bold rounded px-6 py-3 transition-colors">
         Call Us Now!
       </a>
     </div>
