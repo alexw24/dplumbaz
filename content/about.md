@@ -39,7 +39,7 @@ We also believe in explaining what we find and giving you options. You'll never 
 **What that looks like in practice:**
 
 - We use sewer cameras to inspect stubborn drain lines. Different kinds of blockage and damage require different solutions.
-- When advantageous, we utilize [high-speed drain cleaning](/residential-plumbing/high-speed-drain-cleaning/) that cleans the full pipe interior rather than punching a hole through the clog
+- When advantageous, we utilize [high-speed drain cleaning](/services/high-speed-drain-cleaning/) that cleans the full pipe interior rather than punching a hole through the clog
 - We offer free water hardness testing, and we can consult you on building the right kind of water filtration system for the kinds of impurities you're trying to remove, whether it's a simple [water softener](/water-quality/water-softeners/) or a more thorough [whole home filtration](/water-quality/whole-home-filtration/) system.
 - We walk you through repipe options (copper vs. PEX, cost, pros/cons) before you commit
 

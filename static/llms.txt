@@ -1,0 +1,37 @@
+# Diagnostic Plumbing
+
+> Locally owned plumbing company serving the Phoenix East Valley — Gilbert, Chandler, Mesa, Scottsdale, Tempe, Queen Creek, San Tan Valley, and Phoenix. Triple-licensed: CR-37 Plumbing (#327364), B-3 General Remodeling (#332463), CR-61 Carpentry & Remodeling (#327365). Phone: (480) 220-1266.
+
+## Services
+
+### Plumbing
+- [Drain Cleaning](/services/drain-cleaning/)
+- [High-Speed Drain Cleaning](/services/high-speed-drain-cleaning/)
+- [Water Heater Repair & Replacement](/services/water-heaters/)
+- [Whole-Home Repipes](/services/repipes/)
+- [Plumbing Repairs](/services/plumbing-repairs/)
+- [Emergency Plumbing (24/7)](/emergency-plumbing/)
+- [Commercial & Hospitality Plumbing](/commercial-hospitality/)
+
+### Water Quality
+- [Water Softener Installation & Service](/water-quality/water-softeners/)
+- [Whole-Home Water Filtration](/water-quality/whole-home-filtration/)
+- [Reverse Osmosis Systems](/water-quality/reverse-osmosis/)
+
+### Remodeling
+- [Bathroom & Kitchen Remodeling](/services/remodeling/)
+
+## Service Areas
+- [Gilbert, AZ](/plumber-gilbert-az/)
+- [Chandler, AZ](/plumber-chandler-az/)
+- [Mesa, AZ](/plumber-mesa-az/)
+- [Scottsdale, AZ](/plumber-scottsdale-az/)
+- [Tempe, AZ](/plumber-tempe-az/)
+- [Queen Creek, AZ](/plumber-queen-creek-az/)
+- [San Tan Valley, AZ](/plumber-san-tan-valley-az/)
+- [Phoenix, AZ](/plumber-phoenix-az/)
+
+## Company
+- [About Diagnostic Plumbing](/about/)
+- [Contact & Service Request](/contact/)
+- [Blog](/blog/)
