@@ -1,6 +1,7 @@
 ---
 title: "Plumber in Scottsdale, AZ"
-description: "Diagnostic Plumbing serves Scottsdale, AZ — triple-licensed for full remodels, water quality systems, drain cleaning, repipes, and emergency plumbing."
+meta_title: "Plumber in Scottsdale, AZ | Diagnostic Plumbing"
+description: "Triple-licensed plumber serving Scottsdale, AZ. Full remodels, water quality systems, drain cleaning, repipes & emergency plumbing. ROC #327364. Call (480) 220-1266."
 url: "/plumber-scottsdale-az/"
 type: "service-area"
 faq:

@@ -1,6 +1,7 @@
 ---
 title: "Plumber in Chandler, AZ | Diagnostic Plumbing"
-description: "Licensed plumber serving Chandler, AZ. Repipes, drain cleaning, water softeners, water heaters & remodeling. Locally owned. Call (480) 220-1266."
+meta_title: "Plumber in Chandler, AZ | Diagnostic Plumbing"
+description: "Licensed plumber serving Chandler, AZ. Repipes, drain cleaning, water softeners, water heaters & remodeling. Locally owned, triple-licensed. Call (480) 220-1266."
 url: "/plumber-chandler-az/"
 type: "service-area"
 faq:

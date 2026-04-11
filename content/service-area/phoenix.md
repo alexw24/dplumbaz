@@ -1,6 +1,7 @@
 +++
 title = "Plumber in Phoenix, AZ"
-description = "Diagnostic Plumbing serves Phoenix, AZ — east Phoenix, Ahwatukee, Arcadia, and beyond. Licensed plumber for repairs, repipes, drain cleaning & more."
+meta_title = "Plumber in Phoenix, AZ | Diagnostic Plumbing"
+description = "Locally owned, triple-licensed plumber serving east Phoenix, Ahwatukee & Arcadia. Repairs, repipes, drain cleaning, water softeners & remodeling. Call (480) 220-1266."
 url = "/plumber-phoenix-az/"
 type = "service-area"
 

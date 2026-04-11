@@ -8,6 +8,7 @@ layout: about
 hero_image: images/about-hero.jpeg
 intro_image: images/about_teamphoto.jpeg
 intro_image_alt: The Diagnostic Plumbing team
+intro_heading: Locally owned and operated.
 team:
   - name: Gary
     role: Owner & Plumber

@@ -52,6 +52,16 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
     ├── cta.html                      # Reusable CTA block
     ├── faq.html                      # details/summary FAQ accordion
     ├── service-areas.html            # City links grid
+    ├── forms/
+    │   ├── home.html                 # Homepage contact/lead form
+    │   ├── generic.html              # Generic contact form
+    │   ├── drain-cleaning.html       # Drain cleaning service form
+    │   ├── emergency.html            # Emergency plumbing form
+    │   ├── remodeling.html           # Remodeling quote form
+    │   ├── reverse-osmosis.html      # Reverse osmosis quote form
+    │   ├── location.html             # Service area / location form
+    │   ├── whole-home.html           # Whole home filtration form
+    │   └── softener.html             # Water softener quote form
     └── schema/
         ├── local-business.html       # Plumber JSON-LD (every page)
         └── faq.html                  # FAQPage JSON-LD (pages with faq param)
@@ -140,7 +150,7 @@ answer = "Another answer."
 - **Blog strategy:** informational content → service page traffic (see `Strategy/CONTENT-CALENDAR.md` in vault)
 - **Service area pages** at `/plumber-{city}-az/` — footer + internal links only, not nav
 
-## Future Integrations
+## Integrations
 
-- **JobTread** — CRM with open API. Contact form → lead creation, booking, review request automation.
+- **JobTread** — CRM. Forms submit to JobTread API for lead creation. See `layouts/partials/forms/` for service-specific forms.
 - **Cloudflare Pages** — auto-deploy from GitHub on push to main.

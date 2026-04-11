@@ -1,6 +1,7 @@
 ---
 title: "Plumber in Gilbert, AZ | Diagnostic Plumbing"
-description: "Licensed plumber serving Gilbert, AZ. Drain cleaning, water softeners, water heaters, repipes & more. Locally owned. Call (480) 220-1266."
+meta_title: "Plumber in Gilbert, AZ | Diagnostic Plumbing"
+description: "Licensed plumber serving Gilbert, AZ. Drain cleaning, water softeners, water heaters, repipes & remodeling. Locally owned, triple-licensed. Call (480) 220-1266."
 url: "/plumber-gilbert-az/"
 type: "service-area"
 faq:

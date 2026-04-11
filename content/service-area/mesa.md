@@ -1,6 +1,7 @@
 ---
 title: "Plumber in Mesa, AZ"
-description: "Diagnostic Plumbing serves Mesa, AZ — locally owned, triple-licensed plumber for drain cleaning, repipes, water heaters, water softeners, and remodeling."
+meta_title: "Plumber in Mesa, AZ | Diagnostic Plumbing"
+description: "Locally owned, triple-licensed plumber serving Mesa, AZ. Drain cleaning, repipes, water heaters, water softeners & remodeling. ROC #327364. Call (480) 220-1266."
 url: "/plumber-mesa-az/"
 type: "service-area"
 faq:
