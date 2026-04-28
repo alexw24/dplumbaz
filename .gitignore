@@ -4,4 +4,5 @@ resources/
 .hugo_build.lock
 .DS_Store
 .obsidian/
+.claude/
 CLAUDE.md
