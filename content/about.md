@@ -26,9 +26,15 @@ Diagnostic Plumbing is a family owned and operated plumbing and contracting comp
 We believe in explaining what we find and giving you options. We'll show you what's going on, tell you what it means, and help you make a smart decision.
 {{< /callout >}}
 
+<div class="text-center mt-6 mb-1">
+  <a href="#diagnostic-difference" class="inline-block border-2 border-brand-heading text-brand-heading hover:bg-brand-heading hover:text-white font-semibold rounded px-6 py-3 transition-colors">
+    Learn More
+  </a>
+</div>
+
 <!--more-->
 
-## The Diagnostic Difference
+## The Diagnostic Difference {#diagnostic-difference}
 
 Our name isn't just a brand. It's how we work.
 
