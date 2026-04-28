@@ -26,9 +26,9 @@ Diagnostic Plumbing is a family owned and operated plumbing and contracting comp
 We believe in explaining what we find and giving you options. We'll show you what's going on, tell you what it means, and help you make a smart decision.
 {{< /callout >}}
 
-<div class="text-center mt-6 -mb-4" x-data="{ smoothScroll(id) { const target = document.getElementById(id); if (!target) return; const start = window.scrollY; const end = target.getBoundingClientRect().top + start; const duration = 1200; const startTime = performance.now(); const ease = t => t < 0.5 ? 2*t*t : -1+(4-2*t)*t; const step = now => { const p = Math.min((now - startTime) / duration, 1); window.scrollTo(0, start + (end - start) * ease(p)); if (p < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); } }">
+<div class="text-center mt-6 -mb-4">
   <a href="#how-we-work" 
-     @click.prevent="smoothScroll('how-we-work')"
+     onclick="smoothScroll('how-we-work'); return false"
      class="inline-block border-2 border-brand-heading text-brand-heading hover:bg-brand-heading hover:text-white font-semibold rounded px-6 py-3 transition-colors cursor-pointer">
     Learn More
   </a>
