@@ -5,17 +5,15 @@ description: "Call (480) 220-1266 or email office@dplumbaz.com to request servic
 url: "/contact/"
 type: "page"
 form: "generic"
+hero_cta_primary_text: "Request Service"
+hero_cta_primary_url: "#quote-form"
 ---
+**Phone:** [**(480) 220-1266**](tel:4802201266) — call or text.
 
-The fastest way to reach us is by phone. We answer during business hours, and we get back to you quickly when we don't.
-
-## Phone
-
-[**(480) 220-1266**](tel:4802201266) — call or text.
-
-## Email
-
-[office@dplumbaz.com](mailto:office@dplumbaz.com) — for quotes, scheduling, or non-urgent questions. Anything addressed to gary@, alex@, or office@dplumbaz.com reaches us.
+### Email
+- [office@dplumbaz.com](mailto:office@dplumbaz.com) — for quotes, scheduling, or non-urgent questions.
+- gary@dplumbaz.com
+- [alex@dplumbaz.com](mailto:alex@dplumbaz.com).
 
 ## Hours
 
@@ -40,4 +38,4 @@ We serve the East Valley:
 
 ROC #332463 (B-3 General Remodeling), ROC #327364 (CR-37 Plumbing), ROC #327365 (CR-61 Carpentry, Remodeling & Repairs).
 
-Locally owned. Family operated. The form below comes straight to us — no call center, no third party.
+Locally owned. Family operated. The form below comes straight to us, no call center, no third party.
