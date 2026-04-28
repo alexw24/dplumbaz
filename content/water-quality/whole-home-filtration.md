@@ -283,6 +283,8 @@ Under-sink RO is point-of-use — it treats drinking and cooking water at the ki
 **Addresses:** Arsenic (95%+), PFAS (90%+), nitrate (85–95%), TDS (90–99% reduction), hardness, chlorine, heavy metals, disinfection byproducts  
 **Does not address:** Scale protection for whole-home pipes and fixtures (point-of-use only)
 
+[**Learn More!**](/water-quality/reverse-osmosis)
+
 ### UV Disinfection (Add-On)
 
 Ultraviolet light inactivates bacteria, viruses, and other pathogens without adding chemicals. Municipal East Valley water is already chlorinated, so UV isn't necessary for standard city water customers. It's relevant for well water users, households with immunocompromised members, or as a final stage after RO — since RO removes the residual chlorine that would otherwise suppress bacterial regrowth in the storage tank.
