@@ -100,10 +100,10 @@
 {{/* ── The Diagnostic Difference ── */}}
 {{ $parts := split .RawContent "<!--more-->" }}
 {{ if gt (len $parts) 1 }}
-<section class="py-16 bg-brand-surface">
+<section class="py-12 bg-brand-surface">
   <div class="mx-auto max-w-4xl px-4">
     <p class="text-sm font-semibold tracking-widest text-brand-accent uppercase mb-2">HOW WE WORK</p>
-    <div class="border-t-4 border-brand-accent rounded-t-sm mb-8"></div>
+    <div class="border-t-4 border-brand-accent rounded-t-sm mb-4"></div>
     <div class="prose prose-lg prose-headings:text-brand-heading prose-a:text-brand-accent prose-li:text-gray-700 prose-li:marker:text-brand-accent">
       {{ index $parts 1 | .RenderString }}
     </div>

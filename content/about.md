@@ -26,8 +26,10 @@ Diagnostic Plumbing is a family owned and operated plumbing and contracting comp
 We believe in explaining what we find and giving you options. We'll show you what's going on, tell you what it means, and help you make a smart decision.
 {{< /callout >}}
 
-<div class="text-center mt-6 -mb-12">
-  <a href="#diagnostic-difference" class="inline-block border-2 border-brand-heading text-brand-heading hover:bg-brand-heading hover:text-white font-semibold rounded px-6 py-3 transition-colors">
+<div class="text-center mt-6 -mb-4" x-data="{ smoothScroll(id) { const el = document.getElementById(id); if (!el) return; const start = window.scrollY; const end = el.getBoundingClientRect().top + window.scrollY; const duration = 1000; const startTime = performance.now(); const animate = (currentTime) => { const elapsed = currentTime - startTime; const progress = Math.min(elapsed / duration, 1); window.scrollTo(0, start + (end - start) * progress); if (progress < 1) requestAnimationFrame(animate); }; requestAnimationFrame(animate); } }">
+  <a href="#diagnostic-difference" 
+     @click.prevent="smoothScroll('diagnostic-difference')"
+     class="inline-block border-2 border-brand-heading text-brand-heading hover:bg-brand-heading hover:text-white font-semibold rounded px-6 py-3 transition-colors cursor-pointer">
     Learn More
   </a>
 </div>
@@ -46,7 +48,8 @@ We also believe in explaining what we find and giving you options. You'll never 
 
 - We use sewer cameras to inspect stubborn drain lines. Different kinds of blockage and damage require different solutions.
 - When advantageous, we utilize [high-speed drain cleaning](/services/high-speed-drain-cleaning/) that cleans the full pipe interior rather than punching a hole through the clog
-- We offer free water hardness testing, and we can consult you on building the right kind of water filtration system for the kinds of impurities you're trying to remove, whether it's a simple [water softener](/water-quality/water-softeners/) or a more thorough [whole home filtration](/water-quality/whole-home-filtration/) system.
+- We use water contaminate lab test data, and we can consult you on building the right kind of water filtration system for the kinds of impurities you're trying to remove, whether it's a simple [water softener](/water-quality/water-softeners/) or a more thorough [whole home filtration](/water-quality/whole-home-filtration/) system.
 - We walk you through repipe options (copper vs. PEX, cost, pros/cons) before you commit
+- As your general contractor, we plan and coordinate across multiple trades to build your next exciting project
 
-We use modern equipment because it produces better results and longer-lasting fixes.
+We use modern equipment and technologies when they produce better results and longer-lasting fixes.
