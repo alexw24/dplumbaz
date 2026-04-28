@@ -5,6 +5,7 @@ description: "Call (480) 220-1266 or email office@dplumbaz.com to request servic
 url: "/contact/"
 type: "page"
 form: "generic"
+hero_image: "/images/contactus-hero.jpeg"
 hero_cta_primary_text: "Request Service"
 hero_cta_primary_url: "#quote-form"
 ---

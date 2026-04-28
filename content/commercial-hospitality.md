@@ -3,6 +3,7 @@ title: "Commercial & Hospitality Plumbing"
 meta_title: "Commercial Plumber East Valley AZ — Hospitality & Restaurant | Diagnostic Plumbing"
 description: "CR-37 commercial-licensed plumber serving East Valley hotels, restaurants, bars & short-term rental operators. High-speed drain cleaning, water heater banks, between-booking remodels. (480) 220-1266."
 url: "/commercial-hospitality/"
+hero_image: "/images/commercial-hero.jpeg"
 type: "services"
 toc: true
 intro_heading: Commercial Plumbing for East Valley Hospitality Operators

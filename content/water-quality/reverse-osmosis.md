@@ -5,6 +5,7 @@ description: "Gilbert arsenic hits the legal limit. Tempe PFAS is 7.5× the 2029
 url: "/water-quality/reverse-osmosis/"
 type: "services"
 form: "reverse-osmosis"
+hero_image: "/images/reverse-osmosis-hero.jpeg"
 hero_cta_primary_text: "Free Online Quote"
 hero_cta_primary_url: "#quote-form"
 toc: true

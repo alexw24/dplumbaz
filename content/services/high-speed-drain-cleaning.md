@@ -5,6 +5,7 @@ description: "High-speed mechanical drain cleaning scours pipe walls clean, not 
 url: "/services/high-speed-drain-cleaning/"
 type: "services"
 form: "drain-cleaning"
+hero_image: "/images/drain-cleaning-hero.jpeg"
 hero_cta_primary_text: "Schedule Service"
 hero_cta_primary_url: "#quote-form"
 toc: true

@@ -5,6 +5,7 @@ description: "Plumbing-led remodels in Gilbert, Chandler, Mesa & the East Valley
 url: "/services/remodeling/"
 type: "services"
 form: "remodeling"
+hero_image: "/images/remodeling-hero-png.png"
 toc: true
 intro_heading: "Kitchen & Bathroom Remodeling in the East Valley"
 faq:

@@ -5,6 +5,7 @@ description: "Tank, tankless, and heat pump water heater installation and repair
 url: "/services/water-heaters/"
 type: "services"
 form: "generic"
+hero_image: "/images/water-heaters-hero.jpeg"
 hero_cta_primary_text: "Request Service"
 hero_cta_primary_url: "#quote-form"
 toc: true

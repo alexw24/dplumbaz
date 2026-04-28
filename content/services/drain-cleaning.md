@@ -5,6 +5,7 @@ description: "Professional drain cleaning in Gilbert, Chandler, Mesa & the East 
 url: "/services/drain-cleaning/"
 type: "services"
 form: "drain-cleaning"
+hero_image: "/images/drain-cleaning-hero.jpeg"
 hero_cta_primary_text: "Request Service"
 hero_cta_primary_url: "#quote-form"
 toc: true
