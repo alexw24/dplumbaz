@@ -130,10 +130,9 @@ We don't default to replacement. A water heater with a failed element, bad therm
 
 The factors that shift the answer toward replacement:
 
-- **Tank is leaking at a seam or the bottom.** Internal corrosion has reached the tank wall. There is no repair for this. Every day it runs is a day it might fail catastrophically.
-- **Unit is 10+ years old.** Even if the current problem is repairable, components are aging together. A repair buys months, not years.
-- **Unit is 8+ years old with significant sediment buildup.** The scale itself is now structural; it won't come out cleanly, and the tank bottom is stressed.
-- **Efficiency standards have changed since the unit was installed.** Newer units may qualify for utility rebates; a replacement here has a shorter payback period than it appears.
+- **Tank is leaking at a seam or the bottom.** Internal corrosion has reached the tank wall. There is no repair for this.
+- **Unit is 10+ years old.** Even if the current problem is repairable, the age of the unit means more failures are likely. It may not be cost effective to repair
+- **Efficiency standards have changed since the unit was installed.** Newer units may qualify for utility rebates .
 - **Fitting or connection is leaking.** Typically repairable. Fittings, supply lines, and pressure relief valves are external components — the tank itself may be fine.
 
 We'll give you an honest read on the specific failure before recommending a path. If repair makes sense, we'll say so. See [plumbing repairs](/services/plumbing-repairs/) for general repair work beyond water heaters.

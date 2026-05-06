@@ -129,7 +129,7 @@ What does all of this data mean? Let's get into it below. We'd love to help you 
 
 You can click your city to view the official consumer confidence report and lab results.
 
-**Question: *What about whats coming out of MY tap?*** Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. What's more: cities mix in different sources of water throughout the year, like the Colorado River, Salt and Verde rivers, and groundwater. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision (older homes/areas where pipe corrosion is a concern). But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a client's needs and goals influence the design of the system more than for example, whether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.**
+**Question: *What about whats coming out of MY tap?*** Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. What's more: cities mix in different sources of water throughout the year, like the Colorado River, Salt and Verde rivers, and groundwater. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision (older homes/areas where pipe corrosion is a concern). But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a client's needs and goals influence the design of the system more than for example, whether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.** 
 
 ## Which Filter Addresses Which Contaminant
 
@@ -231,7 +231,9 @@ Water treatment companies market their products with dramatic promises. Here's a
 
 ### Sediment Filtration
 *Photo is a sediment filter that's ready to be replaced after about a year of use in Gilbert. It was white as snow when it was put in... it did its job.*
+
 {{< img src="images/whf-sediment.jpeg" alt="Sediment filter cartridge after one year of use in an East Valley home" maxwidth="200px" float="right" >}}
+
 A sediment filter is a mechanical barrier that removes particles: sand, rust, silt, and debris down to 5 microns. Its primary job is protecting downstream equipment and keeping fine sediment out of your clothes in the washing machine, etc. Sediment filters are replaced yearly, filter housing size is standardized and filter replacements are affordable and NOT proprietary.
 
 **Addresses:** Particulate, rust, sediment, any particle above 5 microns  
@@ -299,6 +301,8 @@ Ultraviolet light inactivates bacteria, viruses, and other pathogens without add
 ---
 
 ## Building the Right System
+
+{{< img src="images/whf-hero.jpeg" alt="Installed Whole Home Filtration System with Softener, Carbon Filter, and Sediment Filter" maxwidth="250px" float="right" >}}
 
 For most East Valley homes, the most effective approach stacks treatments in sequence:
 
