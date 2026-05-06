@@ -5,6 +5,7 @@ description: "Whole-home water filtration systems for clean, filtered water at e
 url: /water-quality/whole-home-filtration/
 type: services
 form: whole-home
+hero_image: "/images/whf-hero.jpeg"
 hero_cta_primary_text: Free Quote
 hero_cta_primary_url: "#quote-form"
 toc: true
