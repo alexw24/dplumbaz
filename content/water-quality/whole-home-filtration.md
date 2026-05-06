@@ -13,14 +13,14 @@ intro_heading: Whole Home Water Filtration for the East Valley
 faq:
   - question: "What's the difference between a water softener and a whole-home filtration system?"
     answer: "A water softener is a single treatment stage — it removes hardness minerals through ion exchange. A whole-home filtration system is a stack: sediment pre-filter, carbon filter, softener, and optionally reverse osmosis at the drinking tap. Hardness is one of several problems in East Valley water. Arsenic, PFAS, and nitrate require different technologies that a water softener alone doesn't address."
+  - question: "Why aren't we recommending filtering for arsenic and nitrates throughout the entire home?"
+    answer: "These contaminates aren't readily absorbed through the skin, they pose a health risk primarily when ingested. Filtering these with high-flow equipment suitable for an entire house is cost prohibitive. The research and evidence strongly supports RO at point-of-use for effectively filtering these contaminates from drinking water, where it can actually cause harm. NOTE: Well-water homes should certainly test for arsenic and adding a specialized arsenic filtration tank to the whole-home arsenal may be necessary."
   - question: "Is a salt-free conditioner as effective as a water softener in the East Valley?"
     answer: "For most of our service area, no — and we'll tell you that upfront. TAC conditioners prevent scale from adhering to surfaces, but the hardness minerals stay in the water. TAC's effectiveness drops off significantly above roughly 18 gpg. Mesa peaks at 25 gpg, Tempe groundwater blends hit 33 gpg. We install TAC systems for customers who prefer to avoid salt, but we walk through what that means for their specific supply zone first."
   - question: "If I have under-sink RO, do I still need a water softener?"
     answer: "Yes, for most homes. RO treats one tap — drinking and cooking water, at a few gallons per hour. The rest of your home sees unfiltered municipal water: pipes, water heater, dishwasher, showerheads, and washing machine. Hard water continues scaling all of those regardless of what's happening under the kitchen sink. A softener protects the whole house. RO and a softener do different jobs; most complete systems include both."
   - question: "How often does a whole-home filtration system need maintenance?"
     answer: "Sediment pre-filters typically need replacement every 3–6 months depending on sediment load. Carbon filters last roughly 6–12 months. Salt-based softeners need salt topped off every 4–8 weeks and an annual service check. UV bulbs replace annually. We set up a maintenance schedule at installation so you know what's due and when."
-  - question: "Why aren't we recommending specialized arsenic filtration for the entire home?"
-    answer: "Arsenic isn't readily absorbed through the skin. Well-water homes should certainly test for arsenic and adding a specialized arsenic filtration tank to the whole-home arsenal may be necessary. For the arsenic ranges showing up on lab tests in our East Valley cities, it is unnecessary and costly. The science strongly supports RO at point-of-use for effectively filtering out arsenic from drinking water."
   - question: "What about whats coming out of MY tap?"
     answer: "Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision. But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a clients needs and goals influence the design of the system more than for example, wether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.**"
 ---
@@ -231,9 +231,7 @@ Water treatment companies market their products with dramatic promises. Here's a
 
 ### Sediment Filtration
 *Photo is a sediment filter that's ready to be replaced after about a year of use in Gilbert. It was white as snow when it was put in... it did its job.*
-
 {{< img src="images/whf-sediment.jpeg" alt="Sediment filter cartridge after one year of use in an East Valley home" maxwidth="200px" float="right" >}}
-
 A sediment filter is a mechanical barrier that removes particles: sand, rust, silt, and debris down to 5 microns. Its primary job is protecting downstream equipment and keeping fine sediment out of your clothes in the washing machine, etc. Sediment filters are replaced yearly, filter housing size is standardized and filter replacements are affordable and NOT proprietary.
 
 **Addresses:** Particulate, rust, sediment, any particle above 5 microns  
