@@ -229,11 +229,16 @@ UV is not shown for the contaminants above because it addresses bacteria and pat
 Water treatment companies market their products with dramatic promises. Here's a straightforward breakdown of what each technology does — and just as importantly, what it doesn't.
 
 ### Sediment Filtration
+*Photo is a sediment filter that's ready to be replaced after about a year of use in Gilbert. It was white as snow when it was put in... it did its job.*
 
-A sediment filter is a mechanical barrier, rated in microns, that removes particles: sand, rust, silt, and debris from aging pipes. It doesn't interact with anything dissolved in the water. Its primary job is protecting downstream equipment — softeners, carbon filters, and RO membranes all wear out faster without it.
+{{< img src="images/whf-sediment.jpeg" alt="Sediment filter cartridge after one year of use in an East Valley home" maxwidth="200px" float="right" >}}
 
-**Addresses:** Particulate, rust, sediment  
+A sediment filter is a mechanical barrier that removes particles: sand, rust, silt, and debris down to 5 microns. Its primary job is protecting downstream equipment and keeping fine sediment out of your clothes in the washing machine, etc. Sediment filters are replaced yearly, filter housing size is standardized and filter replacements are affordable and NOT proprietary.
+
+**Addresses:** Particulate, rust, sediment, any particle above 5 microns  
 **Does not address:** Hardness, arsenic, PFAS, nitrate, chlorine, TDS
+
+<div style="clear:both"></div>
 
 ### Activated Carbon Filtration
 

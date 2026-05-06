@@ -1,0 +1,39 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $maxwidth := .Get "maxwidth" | default "" }}
+{{ $float := .Get "float" | default "" }}
+{{ $img := resources.Get $src }}
+{{ with $img }}
+  {{ $w := .Width }}
+  {{ $sm := cond (gt $w 800) (.Resize "800x webp") . }}
+  {{ $fallback := cond (gt $w 800) (.Resize "800x") . }}
+  {{ if $float }}
+    {{ $margin := cond (eq $float "right") "0 0 1rem 1.5rem" "0 1.5rem 1rem 0" }}
+    <div class="not-prose" style="float:{{ $float }}; margin:{{ $margin }}; {{ with $maxwidth }}width:{{ . }};{{ end }}">
+      <picture>
+        <source type="image/webp" srcset="{{ $sm.RelPermalink }}">
+        <img src="{{ $fallback.RelPermalink }}"
+             alt="{{ $alt }}"
+             width="{{ $sm.Width }}"
+             height="{{ $sm.Height }}"
+             loading="lazy"
+             decoding="async"
+             style="width:100%; height:auto; border-radius:0.5rem;">
+      </picture>
+    </div>
+  {{ else }}
+    <figure class="my-6">
+      <picture>
+        <source type="image/webp" srcset="{{ $sm.RelPermalink }}">
+        <img src="{{ $fallback.RelPermalink }}"
+             alt="{{ $alt }}"
+             width="{{ $sm.Width }}"
+             height="{{ $sm.Height }}"
+             loading="lazy"
+             decoding="async"
+             class="rounded-lg h-auto"
+             {{ with $maxwidth }}style="max-width:{{ . }}"{{ end }}>
+      </picture>
+    </figure>
+  {{ end }}
+{{ end }}

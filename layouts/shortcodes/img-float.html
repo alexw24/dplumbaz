@@ -1,0 +1,24 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $width := .Get "width" | default "200px" }}
+{{ $side := .Get "side" | default "right" }}
+{{ $img := resources.Get $src }}
+{{ with $img }}
+  {{ $resizeWidth := 400 }}
+  {{ $processed := cond (gt .Width $resizeWidth) (.Resize (printf "%dx webp" $resizeWidth)) . }}
+  {{ $fallback := cond (gt .Width $resizeWidth) (.Resize (printf "%dx" $resizeWidth)) . }}
+  {{ $flexDir := cond (eq $side "left") "row" "row-reverse" }}
+  <div style="display:flex; flex-direction:{{ $flexDir }}; gap:1.5rem; align-items:flex-start; margin:1rem 0 1.5rem;">
+    <picture style="flex-shrink:0; width:{{ $width }};">
+      <source type="image/webp" srcset="{{ $processed.RelPermalink }}">
+      <img src="{{ $fallback.RelPermalink }}"
+           alt="{{ $alt }}"
+           width="{{ $processed.Width }}"
+           height="{{ $processed.Height }}"
+           loading="lazy"
+           decoding="async"
+           style="width:100%; height:auto; border-radius:0.5rem;">
+    </picture>
+    <div>{{ $.Inner | markdownify }}</div>
+  </div>
+{{ end }}
