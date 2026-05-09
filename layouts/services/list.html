@@ -5,17 +5,23 @@
     {{ .Content }}
   </div>
   {{ end }}
-  {{ partial "services-grid.html" (dict "urls" (slice
-    "/services/drain-cleaning"
-    "/services/high-speed-drain-cleaning"
-    "/services/water-heaters"
-    "/services/repipes"
-    "/services/plumbing-repairs"
-    "/services/remodeling"
-    "/water-quality/water-softeners"
-    "/water-quality/whole-home-filtration"
-    "/water-quality/reverse-osmosis"
-  )) }}
+  {{ $urls := slice }}
+  {{ if eq .Section "services" }}
+    {{ $urls = slice
+      "/services/drain-cleaning"
+      "/services/high-speed-drain-cleaning"
+      "/services/water-heaters"
+      "/services/repipes"
+      "/services/plumbing-repairs"
+      "/services/remodeling"
+      "/water-quality/water-softeners"
+      "/water-quality/whole-home-filtration"
+      "/water-quality/reverse-osmosis"
+    }}
+  {{ else }}
+    {{ range .Pages }}{{ $urls = $urls | append .RelPermalink }}{{ end }}
+  {{ end }}
+  {{ partial "services-grid.html" (dict "urls" $urls) }}
 </div>
 {{ with .Params.form }}
 <section id="quote-form" class="py-12 bg-brand-surface">
