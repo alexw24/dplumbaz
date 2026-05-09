@@ -2,6 +2,7 @@
 title: "Reverse Osmosis Installation"
 meta_title: "Reverse Osmosis Installation — East Valley, AZ | Diagnostic Plumbing"
 description: "Gilbert arsenic hits the legal limit. Tempe PFAS is 7.5× the 2029 federal limit. No softener or carbon filter touches these. Diagnostic Plumbing installs under-sink RO systems throughout the East Valley — (480) 220-1266."
+card_summary: "Gilbert arsenic hits the legal limit. Tempe PFAS is 750% of the 2029 federal limit. No softener or carbon filter effectively removes these. Never run out of safe drinking water in your home."
 url: "/water-quality/reverse-osmosis/"
 type: "services"
 form: "reverse-osmosis"

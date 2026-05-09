@@ -2,9 +2,11 @@
 title: "Repipes"
 meta_title: "Whole-Home Repipes — Plumbing, Drywall & Finish | East Valley AZ | Diagnostic Plumbing"
 description: "Recurring leaks, polybutylene, galvanized, or slab re-routes. Diagnostic Plumbing replaces your supply lines and patches every wall opening. One company, start to finish. Gilbert, Chandler, Mesa, East Valley. ROC #327364, #332463, #327365."
+card_summary: "Under-slab leaks, whole-home repipes, corroding galvanized pipe, new recirculation line runs. We patch and paint and tile. Let us own the whole process!"
 url: "/services/repipes/"
 type: "services"
 form: "generic"
+hero_image: "/images/repipe.jpeg"
 hero_cta_primary_text: "Get a Quote"
 hero_cta_primary_url: "#quote-form"
 toc: true
@@ -26,7 +28,7 @@ faq:
 
 **Recurring leaks are data, not bad luck.** One pinhole leak on copper can be a repair. Two or three in a short span, especially on the hot-water side, means the pipe itself is failing, and the next one is already forming. A repipe replaces the root cause instead of patching symptoms.
 
-Most East Valley homes were built during one of three pipe eras: galvanized (pre-1970), copper (1970s through the 2000s), and polybutylene (late 1970s through mid-1990s, sometimes alongside copper). Each material has a characteristic failure mode, and each has a predictable end-of-life in this climate and water chemistry. If you're at the point where you're researching repipes, the pipe itself is probably telling you something.
+Most East Valley homes were built during one of three pipe eras: galvanized (pre-1970), underground copper (1970s through the 2000s), and polybutylene (late 1970s through mid-1990s, sometimes alongside copper). Each material has a characteristic failure mode, and each has a predictable end-of-life in this climate and water chemistry. If you're at the point where you're researching repipes, the pipe itself is probably telling you something.
 
 We handle repipes start to finish: scope, permit, installation, pressure test, inspection, and drywall restoration. That last part — patching, texturing, and painting every wall opening after the plumbing work passes — is what we do under our CR-61 Carpentry and B-3 General Remodeling licenses. Most plumbers stop at the pipe. We don't.
 

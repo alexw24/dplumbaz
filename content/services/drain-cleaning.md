@@ -2,6 +2,7 @@
 title: "Drain Cleaning"
 meta_title: "Drain Cleaning Services — East Valley AZ | Diagnostic Plumbing"
 description: "Professional drain cleaning in Gilbert, Chandler, Mesa & the East Valley. Cable snake, high-speed mechanical, and camera inspection. Locally owned — ROC #327364. Call (480) 220-1266."
+card_summary: "Professional drain cleaning. Auger, traditional snake, high-speed cleaning, camera inspection, and more."
 url: "/services/drain-cleaning/"
 type: "services"
 form: "drain-cleaning"

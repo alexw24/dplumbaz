@@ -2,6 +2,7 @@
 title: "Remodeling"
 meta_title: "Kitchen & Bathroom Remodeling — East Valley, AZ | Diagnostic Plumbing"
 description: "Plumbing-led remodels in Gilbert, Chandler, Mesa & the East Valley. B-3 General Remodeling (#332463) + CR-37 Plumbing + CR-61 Carpentry — one company, one point of contact, from slab cut to finished tile."
+card_summary: "Remodels and General Contracting projects. One company, one point of contact."
 url: "/services/remodeling/"
 type: "services"
 form: "remodeling"

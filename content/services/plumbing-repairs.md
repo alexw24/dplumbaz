@@ -2,9 +2,11 @@
 title: "Plumbing Repairs"
 meta_title: "Plumbing Repairs — East Valley AZ | Flat-Rate | Diagnostic Plumbing"
 description: "Flat-rate plumbing repairs in Gilbert, Chandler, Mesa, Scottsdale, and the East Valley. Faucets, toilets, garbage disposals, slab leaks, PRVs, and more. ROC #327364. (480) 220-1266."
+card_summary: "Faucets, shower valves, garbage disposals, PRV's, hose bibs, and more. We can fix anything."
 url: "/services/plumbing-repairs/"
 type: "services"
 toc: true
+hero_image: "/images/repairs-hero.jpeg"
 intro_heading: Flat-Rate Plumbing Repairs for the East Valley
 faq:
   - question: "What does flat-rate pricing actually mean?"

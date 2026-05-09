@@ -2,9 +2,11 @@
 title: "Water Softener Installation"
 meta_title: "Water Softener Installation East Valley AZ | Diagnostic Plumbing"
 description: "East Valley hardness hits 25–33 gpg, among the hardest in the country. Diagnostic Plumbing installs, sizes, and plumbs soft-water loops for the entire service area. ROC #327364. (480) 220-1266."
+card_summary: "East Valley hardness hits 25–33 gpg, among the hardest in the country. Get a quote from us online!"
 url: "/water-quality/water-softeners/"
 type: "services"
 form: "softener"
+hero_image: "/images/softener-2.jpeg"
 hero_cta_primary_text: "Free Quote"
 hero_cta_primary_url: "#quote-form"
 toc: true

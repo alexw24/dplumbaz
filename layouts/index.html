@@ -42,22 +42,17 @@
 <!-- Services Grid -->
 <section class="py-16 bg-brand-surface">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      {{ range (slice
-        (dict "title" "Drain Cleaning" "desc" "Professional drain cleaning and high-speed solutions." "url" "/services/drain-cleaning/")
-        (dict "title" "Water Heaters" "desc" "Repair and replacement for all water heater types." "url" "/services/water-heaters/")
-        (dict "title" "Repipes" "desc" "Whole-home repiping with modern materials." "url" "/services/repipes/")
-        (dict "title" "Water Softeners" "desc" "Combat East Valley hard water with expert solutions." "url" "/water-quality/water-softeners/")
-        (dict "title" "Plumbing Repairs" "desc" "Leak detection, fixture repair, and general plumbing." "url" "/services/plumbing-repairs/")
-        (dict "title" "Remodeling" "desc" "Bathroom and kitchen remodeling services." "url" "/services/remodeling/")
-      ) }}
-      <a href="{{ .url }}" class="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-brand-heading mb-2">{{ .title }}</h3>
-        <p class="text-gray-600">{{ .desc }}</p>
-      </a>
-      {{ end }}
-    </div>
+    {{ partial "services-grid.html" (dict
+      "heading" "Our Services"
+      "urls" (slice
+        "/services/drain-cleaning"
+        "/services/water-heaters"
+        "/services/repipes"
+        "/water-quality"
+        "/services/plumbing-repairs"
+        "/services/remodeling"
+      )
+    ) }}
   </div>
 </section>
 
@@ -68,15 +63,15 @@
     <div class="grid md:grid-cols-3 gap-8 text-center">
       <div>
         <h3 class="text-xl font-semibold mb-2">One Company, Start to Finish</h3>
-        <p class="text-gray-600">Triple-licensed for plumbing, remodeling, and carpentry — one point of contact for everything.</p>
+        <p class="text-gray-600">Triple-licensed for plumbing, remodeling, and carpentry. One point of contact for everything.</p>
       </div>
       <div>
         <h3 class="text-xl font-semibold mb-2">High-Speed Drain Cleaning</h3>
-        <p class="text-gray-600">First in the East Valley to offer high-speed drain cleaning technology.</p>
+        <p class="text-gray-600">We offer the latest drain cleaning technology. We clean the pipe back to its original diameter, instead of just poking a hole through blockage, only for it to clog again in a matter of time.</p>
       </div>
       <div>
         <h3 class="text-xl font-semibold mb-2">Water Quality Experts</h3>
-        <p class="text-gray-600">Softeners, whole-home filtration, and reverse osmosis for Arizona's hard water.</p>
+        <p class="text-gray-600">Softeners, whole-home filtration, and reverse osmosis for Arizona's hard water. Evidence-based approach using lab test data to target the right contaminants using proven filtration technologies.</p>
       </div>
     </div>
   </div>

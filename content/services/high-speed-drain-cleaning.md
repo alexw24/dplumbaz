@@ -1,7 +1,8 @@
 ---
 title: "High-Speed Drain Cleaning"
 meta_title: "High-Speed Drain Cleaning | East Valley First-Mover | Diagnostic Plumbing"
-description: "High-speed mechanical drain cleaning scours pipe walls clean, not just a hole through the clog. First-mover in the East Valley. Gilbert, Chandler, Mesa & beyond. ROC #327364."
+description: "High-speed mechanical drain cleaning scours pipe walls clean, not just a hole through the clog. Bringing the latest technology to the East Valley. Gilbert, Chandler, Mesa & beyond. ROC #327364."
+card_summary: "High-speed mechanical drain cleaning scours the pipe walls clean, instead of just poking a hole through the clog."
 url: "/services/high-speed-drain-cleaning/"
 type: "services"
 form: "drain-cleaning"

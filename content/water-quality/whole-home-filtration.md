@@ -2,6 +2,7 @@
 title: Whole Home Filtration
 meta_title: Whole Home Water Filtration | East Valley AZ | Diagnostic Plumbing
 description: "Whole-home water filtration systems for clean, filtered water at every tap. Addresses East Valley's hard water and sediment. Salt-less options available. Gilbert, Chandler, Mesa. ROC #327364."
+card_summary: "Whole-home water filtration systems for cleaner water for your clothes, dishes, showers, and appliances. We'd love to help you choose the right filtration technologies for your home's water contaminant profile. Evidence-based approach."
 url: /water-quality/whole-home-filtration/
 type: services
 form: whole-home

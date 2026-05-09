@@ -2,6 +2,7 @@
 title: "Water Heaters"
 meta_title: "Water Heater Repair & Replacement — East Valley AZ | Diagnostic Plumbing"
 description: "Tank, tankless, and heat pump water heater installation and repair in Gilbert, Chandler, Mesa, and the East Valley. Hard water kills heaters early. We'll give you an honest assessment. ROC #327364."
+card_summary: "Tank, tankless, and heat pump water heater installation and repair."
 url: "/services/water-heaters/"
 type: "services"
 form: "generic"
