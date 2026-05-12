@@ -2,10 +2,30 @@
 {
   "@context": "https://schema.org",
   "@type": "Plumber",
+  "@id": "{{ .Site.BaseURL }}#business",
   "name": "{{ .Site.Title }}",
   "url": "{{ .Site.BaseURL }}",
-  "telephone": "{{ .Site.Params.phone }}",
+  "telephone": "+14802201266",
   "description": "{{ .Site.Params.description }}",
+  "image": "{{ .Site.BaseURL }}images/home-hero.jpeg",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gilbert",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.35614,
+    "longitude": -111.78903
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "06:00",
+    "closes": "19:00"
+  }],
   "areaServed": [
     {{ range $i, $area := .Site.Params.serviceAreas }}{{ if $i }},{{ end }}
     {
@@ -17,13 +37,15 @@
     {{ range $i, $lic := .Site.Params.licenses }}{{ if $i }},{{ end }}
     {
       "@type": "EducationalOccupationalCredential",
-      "name": "ROC {{ $lic.number }} — {{ $lic.type }}"
+      "name": "ROC {{ $lic.number }} — {{ $lic.type }}",
+      "credentialCategory": "license"
     }{{ end }}
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "AZ",
-    "addressCountry": "US"
-  }
+  ]
 }
 </script>
+{{- /* Add sameAs array here after GBP + Yelp profiles exist:
+  "sameAs": [
+    "https://www.google.com/maps/place/...",
+    "https://www.yelp.com/biz/..."
+  ]
+*/ -}}

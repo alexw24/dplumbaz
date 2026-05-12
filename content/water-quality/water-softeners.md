@@ -134,7 +134,7 @@ The water treatment industry markets several technologies as "salt-free softener
 
 That hardness ceiling matters for the East Valley. Mesa peaks at 25 gpg. Tempe hits 33 gpg. Scottsdale and San Tan Valley run 15–18 gpg, right at the margin where these systems start to struggle. Because municipal hardness varies with seasonal water blending, a TAC or chelation system that performs adequately in winter may fall short in summer when hardness climbs.
 
-The maintenance reality is also worth weighing/. Three or four bags of salt a year, dumped into a brine tank, is genuinely lower-effort than disassembling a cartridge housing every six months and swapping a sequestration filter. Cartridges cost more per year than salt as well.
+The maintenance reality is also worth weighing. Three or four bags of salt a year, dumped into a brine tank, is genuinely lower-effort than disassembling a cartridge housing every six months and swapping a sequestration filter. Cartridges cost more per year than salt as well.
 
 We're happy to install salt-free systems. For most East Valley addresses at peak hardness, salt-based ion exchange is the more reliable choice.
 

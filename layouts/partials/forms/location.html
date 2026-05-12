@@ -1,7 +1,8 @@
 {{- /* Location / Service Area form — JobTread web form */ -}}
 <form data-jobtread-web-form="true" data-key="22TM8kLqb42TfvC5zdcJCjVMgaghfpiQzV"
   class="bg-white rounded-lg shadow-lg p-5 space-y-3">
-  <h2 class="text-lg font-bold text-brand-heading mb-1">Request Service in {{ .Title }}</h2>
+  {{ $city := .Title | strings.TrimPrefix "Plumber in " | strings.TrimSuffix (printf " | %s" .Site.Title) }}
+  <h2 class="text-lg font-bold text-brand-heading mb-1">Request Service in {{ $city }}</h2>
 
   <div class="grid grid-cols-2 gap-3">
     <label class="block">

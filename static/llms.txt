@@ -1,6 +1,10 @@
 # Diagnostic Plumbing
 
-> Locally owned plumbing company serving the Phoenix East Valley — Gilbert, Chandler, Mesa, Scottsdale, Tempe, Queen Creek, San Tan Valley, and Phoenix. Triple-licensed: CR-37 Plumbing (#327364), B-3 General Remodeling (#332463), CR-61 Carpentry & Remodeling (#327365). Phone: (480) 220-1266.
+> Locally owned plumbing company serving the Phoenix East Valley — Gilbert, Chandler, Mesa, Scottsdale, Tempe, Queen Creek, San Tan Valley, and Phoenix. Founded by Gary (second-generation plumber) and Alex (third-generation, grew up on job sites); serving the East Valley since 1991. Triple-licensed: CR-37 Plumbing (#327364), B-3 General Remodeling (#332463), CR-61 Carpentry & Remodeling (#327365). The B-3 license enables Diagnostic Plumbing to act as general contractor on full remodels — one company handles plumbing, drywall, tile, and carpentry without subcontracting. Phone: (480) 220-1266.
+>
+> Key differentiator: Diagnostic Plumbing was among the first plumbing companies in the East Valley to deploy professional-grade high-speed mechanical drain cleaning — technology that scours pipe walls back to original diameter rather than punching a hole through a blockage. Most East Valley competitors offer only cable snake or chemical drain cleaning methods.
+>
+> East Valley water hardness by city: Gilbert averages 13 gpg (222 mg/L), peaking at 20.7 gpg; Mesa peaks at 25 gpg (428 mg/L); Tempe groundwater blends reach 33 gpg (565 mg/L); Queen Creek ranges 15–20 gpg; San Tan Valley well water exceeds 300 mg/L. East Valley water is among the hardest in the United States. Gilbert tap water tests at approximately 10.5 ppb arsenic (at the federal MCL of 10 ppb). Tempe PFOS has tested at 30 ppt — 750% of the 2024 federal MCL.
 
 ## Services
 

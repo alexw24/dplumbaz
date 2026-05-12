@@ -22,7 +22,7 @@ faq:
     answer: "Yes, for most homes. RO treats one tap — drinking and cooking water, at a few gallons per hour. The rest of your home sees unfiltered municipal water: pipes, water heater, dishwasher, showerheads, and washing machine. Hard water continues scaling all of those regardless of what's happening under the kitchen sink. A softener protects the whole house. RO and a softener do different jobs; most complete systems include both."
   - question: "How often does a whole-home filtration system need maintenance?"
     answer: "Sediment and carbon pre-filters typically need replacement every year depending on sediment load. Salt-based softeners need salt topped off every 8-12 weeks depending on usage. We will give a maintenance schedule at installation so you know what's due and when."
-  - question: "What about whats coming out of MY tap?"
+  - question: "What about what's coming out of MY tap?"
     answer: "Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision. But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a client's needs and goals influence the design of the system more than for example, whether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.**"
 ---
 
@@ -130,7 +130,7 @@ What does all of this data mean? Let's get into it below. We'd love to help you 
 
 You can click your city to view the official consumer confidence report and lab results.
 
-**Question: *What about whats coming out of MY tap?*** Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. What's more: cities mix in different sources of water throughout the year, like the Colorado River, Salt and Verde rivers, and groundwater. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision (older homes/areas where pipe corrosion is a concern). But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a client's needs and goals influence the design of the system more than for example, whether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.** 
+**Question: *What about what's coming out of MY tap?*** Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. What's more: cities mix in different sources of water throughout the year, like the Colorado River, Salt and Verde rivers, and groundwater. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision (older homes/areas where pipe corrosion is a concern). But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a client's needs and goals influence the design of the system more than for example, whether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.** 
 
 ## Which Filter Addresses Which Contaminant
 

@@ -20,7 +20,7 @@ Diagnostic Plumbing is a locally owned company serving Gilbert and the surroundi
 ## Plumbing Services in Gilbert, AZ
 
 **[Drain Cleaning](/services/drain-cleaning/) and [High-Speed Drain Cleaning](/services/high-speed-drain-cleaning/)**
-Slow drains and recurring clogs are a fact of life in hard-water areas. We offer both standard drain cleaning and high-speed hydro-jetting — a technology most East Valley plumbers don't carry. High-speed drain cleaning scours the pipe walls clean rather than just punching a hole through the clog, so the results last significantly longer. It's the right call for kitchens, floor drains, and any line that's been problematic for years.
+Slow drains and recurring clogs are a fact of life in hard-water areas. We offer both standard drain cleaning and high-speed drain cleaning — a technology most East Valley plumbers don't carry. High-speed drain cleaning scours the pipe walls clean rather than just punching a hole through the clog, so the results last significantly longer. It's the right call for kitchens, floor drains, and any line that's been problematic for years.
 
 **[Water Heater Repair and Replacement](/services/water-heaters/)**
 Gilbert's hard water accelerates tank corrosion and scale buildup, which is why water heater calls are one of our most common requests in this area. We service and replace all major brands, and we can help you decide whether a traditional tank, a hybrid heat pump unit, or a tankless system makes the most sense for your household size and usage patterns.

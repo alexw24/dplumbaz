@@ -28,8 +28,23 @@
 {{/* Alpine.js for interactive components */}}
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+{{/* Open Graph image */}}
+{{ $ogImage := .Params.hero_image | default "images/home-hero.jpeg" }}
+<meta property="og:image" content="{{ absURL $ogImage }}">
+<meta name="twitter:image" content="{{ absURL $ogImage }}">
+
+{{/* Favicon */}}
+<link rel="icon" type="image/png" href="/favicon.png">
+
+{{/* Preconnect for third-party origins */}}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://app.jobtread.com">
+
 {{/* Structured Data */}}
 {{ partial "schema/local-business.html" . }}
-{{ if .Params.faq }}
-  {{ partial "schema/faq.html" . }}
+{{ if not .IsHome }}
+  {{ partial "schema/breadcrumb.html" . }}
+{{ end }}
+{{ if and (eq .Type "services") (not .IsSection) (not .IsHome) }}
+  {{ partial "schema/service.html" . }}
 {{ end }}
