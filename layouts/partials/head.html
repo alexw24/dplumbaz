@@ -40,6 +40,20 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://app.jobtread.com">
 
+{{/* Hero image preload — lets browser fetch before parsing body */}}
+{{ with .Params.hero_image }}
+  {{ $img := resources.Get . }}
+  {{ with $img }}
+    {{ $sm := .Fill "640x360 webp" }}
+    {{ $md := .Fill "1024x420 webp" }}
+    {{ $lg := .Fill "1920x640 webp" }}
+    <link rel="preload" as="image"
+          href="{{ $lg.RelPermalink }}"
+          imagesrcset="{{ $sm.RelPermalink }} 640w, {{ $md.RelPermalink }} 1024w, {{ $lg.RelPermalink }} 1920w"
+          imagesizes="100vw">
+  {{ end }}
+{{ end }}
+
 {{/* Structured Data */}}
 {{ partial "schema/local-business.html" . }}
 {{ if not .IsHome }}
