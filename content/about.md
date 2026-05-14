@@ -13,7 +13,7 @@ team:
   - name: Gary
     role: Owner & Plumber
     image: images/about_gary.jpeg
-    bio: Gary has worked in the plumbing trade for my whole life, and most of his. He first learned how to plumb from his father, making him a second generation plumber. He then widened his scope, taking on remodeling jobs as well. He first went independent in Ohio, when his wife convinced him to make the jump. They moved to Arizona in '91, and Gary spent some time learning the market and forming relationships before going independent again.
+    bio: Gary has been a technician and business owner for my whole life, and most of his. He first learned how to plumb from his father, making him a second generation plumber. He then widened his scope, taking on remodeling jobs as well. He first went independent in Ohio, when his wife convinced him to make the jump. They moved to Arizona in '91, and Gary spent some time learning the market and forming relationships before founding Diagnostic Plumbing.
   - name: Alex
     role: Owner & Plumber
     image: images/about_alex.jpeg
