@@ -6,7 +6,9 @@
   </div>
   {{ end }}
   {{ $urls := slice }}
-  {{ if eq .Section "services" }}
+  {{ if .Params.grid_urls }}
+    {{ $urls = .Params.grid_urls }}
+  {{ else if eq .Section "services" }}
     {{ $urls = slice
       "/services/drain-cleaning"
       "/services/high-speed-drain-cleaning"
