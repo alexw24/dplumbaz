@@ -14,7 +14,7 @@ hero_cta_primary_url: "#quote-form"
 ### Email
 - [office@dplumbaz.com](mailto:office@dplumbaz.com) — for quotes, scheduling, or non-urgent questions.
 - gary@dplumbaz.com
-- [alex@dplumbaz.com](mailto:alex@dplumbaz.com).
+- [alex@dplumbaz.com](mailto:alex@dplumbaz.com)
 
 ## Hours
 
