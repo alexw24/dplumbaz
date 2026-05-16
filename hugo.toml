@@ -1,6 +1,11 @@
 baseURL = "https://dplumbaz.com/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Diagnostic Plumbing"
+
+[security.node.permissions]
+allowAddons = ['tailwindcss', 'postcss']
+allowWorker = ['tailwindcss', 'postcss']
+allowChildProcess = ['tailwindcss', 'postcss']
 
 [params]
 phone = "(480) 220-1266"
