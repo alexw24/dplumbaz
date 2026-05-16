@@ -21,7 +21,7 @@ When you submit a request-for-service or contact form on this site, we collect:
 - **Service description or message** (optional)
 - **New or returning client status** (optional, homepage form only)
 
-We do NOT use tracking pixels, advertising cookies, or third-party analytics. We do NOT collect payment information through this site.
+We do not use advertising cookies or third-party analytics other than the Meta Pixel (Facebook/Meta), which is used for conversion tracking and ad optimization. The Meta Pixel is deployed site-wide via our website's `<head>` tag. We do NOT collect payment information through this site.
 
 ---
 
