@@ -68,6 +68,15 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '860873033014251');
 fbq('track', 'PageView');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-jobtread-web-form]').forEach(function(form) {
+    form.addEventListener('submit', function() {
+      fbq('track', 'Lead');
+    });
+  });
+});
+</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=860873033014251&ev=PageView&noscript=1"
 /></noscript>
