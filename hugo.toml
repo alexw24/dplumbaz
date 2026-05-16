@@ -62,6 +62,10 @@ url = "/plumber-san-tan-valley-az/"
 name = "Gold Canyon"
 url = "/plumber-gold-canyon-az/"
 
+[[params.serviceAreas]]
+name = "Apache Junction"
+url = "/plumber-apache-junction-az/"
+
 [[menus.main]]
 name = "Home"
 url = "/"

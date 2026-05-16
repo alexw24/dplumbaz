@@ -19,7 +19,7 @@ answer = "Hard water is the norm in Gold Canyon, whether you are on Pinal County
 
 [[faq]]
 question = "Do you serve Gold Canyon even though it is east of Apache Junction?"
-answer = "Yes. Gold Canyon is part of our extended East Valley service area. We travel out regularly for customers in the golf course communities, Superstition Foothills, and the custom-home areas up in the foothills. Distance does not affect our pricing — we quote jobs based on the work, not the drive. Call (480) 220-1266 to schedule."
+answer = "Yes. Gold Canyon is part of our extended East Valley service area. We travel out regularly for customers in the golf course communities, Superstition Foothills, and the custom-home areas up in the foothills. Distance does not affect our pricing — we quote jobs based on the work, not the drive. If you are in Apache Junction, see our dedicated [Apache Junction plumbing page](/plumber-apache-junction-az/). Call (480) 220-1266 to schedule."
 +++
 
 Gold Canyon sits at the base of the Superstition Mountains, east of Apache Junction along US-60, and it has a character unlike anywhere else in the East Valley. It is not a city — Gold Canyon is an unincorporated community in Pinal County — which means the infrastructure picture is patchwork in ways that matter for plumbing. Some neighborhoods are on Pinal County sewer service; others rely on private septic systems. Some homes draw water from county utilities; others are on private wells. And virtually all of them deal with the same hard water that comes with living in this part of the Sonoran Desert.
@@ -65,6 +65,6 @@ Custom and semi-custom homes on larger lots in the upper foothills make up a mea
 
 ---
 
-We serve Gold Canyon alongside our neighboring service areas. For customers just west of Gold Canyon, see our [Queen Creek plumbing page](/plumber-queen-creek-az/) or our [Gilbert plumbing page](/plumber-gilbert-az/). If you are anywhere in the Gold Canyon zip code (85118) and need a licensed plumber, call us at **(480) 220-1266** or [contact us online](/contact/).
+We serve Gold Canyon alongside our neighboring service areas. For customers just west of Gold Canyon, see our [Apache Junction plumbing page](/plumber-apache-junction-az/), our [Queen Creek plumbing page](/plumber-queen-creek-az/), or our [Gilbert plumbing page](/plumber-gilbert-az/). If you are anywhere in the Gold Canyon zip code (85118) and need a licensed plumber, call us at **(480) 220-1266** or [contact us online](/contact/).
 
 Diagnostic Plumbing holds three active ROC licenses: #327364 (CR-37 Plumbing), #332463 (B-3 General Remodeling), and #327365 (CR-61 Carpentry) — all verifiable on the Arizona Registrar of Contractors website.
