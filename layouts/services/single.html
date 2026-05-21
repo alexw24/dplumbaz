@@ -1,4 +1,43 @@
 {{ define "main" }}
+{{ if .Params.form_top }}
+<section id="quote-form" class="py-16 bg-brand-surface">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <div class="md:pt-2">
+        <p class="text-sm font-semibold uppercase tracking-widest text-brand-accent mb-3">Free Quote — No Obligation</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-heading leading-tight mb-4">
+          {{ .Params.form_top_heading | default "Get Your Free Quote" }}
+        </h2>
+        <p class="text-lg text-gray-600 mb-8">
+          {{ .Params.form_top_subtitle | default "Tell us your goals — we'll match you with the right system for your home and East Valley water." }}
+        </p>
+        <ul class="space-y-5 text-gray-700">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-accent shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span>System designed to purify contaminates according to your city's water lab test data, not a one-size-fits-all spec sheet </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-accent shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span>Hardware built for Arizona's extreme hardness conditions</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-accent shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span>Licensed, Bonded, and Insured. ROC #327364</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-accent shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <span>Locally owned, East Valley based. Same-week availability in Gilbert, Chandler, Mesa, Scottsdale, and beyond</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        {{ $form := .Params.form | default "generic" }}
+        {{ partial (printf "forms/%s.html" $form) . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 <article class="max-w-4xl mx-auto px-4 py-12">
   {{ with .Params.intro_heading }}
     <h2 class="text-2xl font-bold text-brand-heading mb-4">{{ . }}</h2>
@@ -18,12 +57,14 @@
     {{ partial "faq.html" $ }}
   {{ end }}
 </article>
+{{ if not .Params.form_top }}
 <section id="quote-form" class="py-12 bg-brand-surface">
   <div class="max-w-xl mx-auto px-4">
     {{ $form := .Params.form | default "generic" }}
     {{ partial (printf "forms/%s.html" $form) . }}
   </div>
 </section>
+{{ end }}
 {{ partial "service-areas.html" . }}
 {{ partial "cta.html" . }}
 {{ end }}

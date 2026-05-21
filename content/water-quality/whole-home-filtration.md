@@ -9,6 +9,8 @@ form: whole-home
 hero_image: "/images/whf-hero.jpeg"
 hero_cta_primary_text: Free Quote
 hero_cta_primary_url: "#quote-form"
+form_top: true
+form_top_heading: "Get Your Free Water Filtration Quote"
 toc: true
 intro_heading: Whole Home Water Filtration for the East Valley
 faq:

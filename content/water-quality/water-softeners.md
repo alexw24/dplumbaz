@@ -9,6 +9,8 @@ form: "softener"
 hero_image: "/images/softener-2.jpeg"
 hero_cta_primary_text: "Free Quote"
 hero_cta_primary_url: "#quote-form"
+form_top: true
+form_top_heading: "Get Your Free Water Softener Quote"
 toc: true
 intro_heading: Water Softener Installation for East Valley Homes
 faq:
