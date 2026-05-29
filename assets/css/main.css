@@ -12,6 +12,7 @@
   --color-brand-accent:  #537a44;   /* medium earthy green — links, icons, CTA */
   --color-brand-surface: #e8dcc6;   /* warm tan — alternate section backgrounds */
   --color-brand-cta:     #e8650a;   /* strong orange — call CTA */
+  --color-brand-cta-hover: #c4520a; /* darker orange — CTA hover */
   --color-brand-nav:     #f2e9d5;   /* light warm tan — nav bar */
   --color-brand-nav-hover: #e2d9c0; /* warm tan hover — nav link backgrounds */
 }

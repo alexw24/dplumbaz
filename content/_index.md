@@ -7,7 +7,7 @@ hero_image: "images/home-hero.jpeg"
 
 <h1 style="text-align: center;">Gilbert's Go-To Plumber for Over a Decade</h1>
 
-Diagnostic Plumbing is a family-owned and operated plumbing and general contracting company based in Queen Creek, serving the East Valley since Gary Witkowski started the business. Gary is a second generation plumber and has spent his career doing the kind of diagnostic work most plumbers skip — figuring out *why* something failed, not just patching it and leaving.
+Diagnostic Plumbing is a family-owned and operated plumbing and general contracting company based in Queen Creek, serving the East Valley since Gary Witkowski started the business. (CLAUDE)
 
 We work in Gilbert, Chandler, Mesa, Scottsdale, Tempe, Queen Creek, San Tan Valley, and Phoenix. Most of our calls come from neighbors who found us through someone they trust, and we work hard to keep it that way.
 
