@@ -28,6 +28,7 @@ faq:
     answer: "Contamination (such as agricultural runoff) and treatment (such as adding chlorine) happens at the source, not in the pipes between the source and your tap. We can absolutely perform an in-home test at your tap, and for some homes that's the right decision. But an in-home test will yield results within the city's provided range, leading to the same configuration recommendation. **In fact, a client's needs and goals influence the design of the system more than for example, whether the arsenic level is 5 or 8 ppb -- we'll be targeting arsenic with the same effective method in either case.**"
 ---
 
+## Contaminants
 **Your water is hard, chlorinated, and contaminated with agricultural runoff. Here's the data.**  Thanks to regulations, each of our cities performs up to 100 water tests **per day** from public and private taps all around town. We use this data to design and recommend a system that aligns with your water treatment goals.
 
 What does all of this data mean? Let's get into it below. We'd love to help you make an informed decision.
