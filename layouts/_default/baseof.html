@@ -17,8 +17,10 @@
       const target = document.getElementById(id);
       if (!target) return;
       const start = window.scrollY;
-      const end = target.getBoundingClientRect().top + start;
-      const duration = 1200;
+      const header = document.querySelector('header');
+      const offset = header ? header.offsetHeight : 0;
+      const end = target.getBoundingClientRect().top + start - offset;
+      const duration = 1000;
       const startTime = performance.now();
       const ease = t => t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
       const step = now => {
