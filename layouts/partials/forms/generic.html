@@ -1,8 +1,14 @@
 {{- /* Generic contact form — same fields as home minus "new client" radio */ -}}
 <form data-jobtread-web-form="true" data-key="22TM8g8W5YFDSmu6mvMgrCYnzHXEcuNiJj"
   data-success-message="Thank you! We'll be in contact soon."
-  class="bg-white rounded-lg shadow-lg p-5 space-y-3">
-  <h2 class="text-lg font-bold text-brand-heading mb-1">Request a Service</h2>
+  class="bg-white rounded-xl shadow-2xl overflow-hidden text-left">
+
+  <div class="bg-brand-accent px-5 py-3">
+    <p class="text-xs font-semibold uppercase tracking-widest text-white/80">Free Estimate</p>
+    <h2 class="text-lg font-bold text-white leading-tight">Request a Service</h2>
+  </div>
+
+  <div class="p-5 space-y-3">
 
   <label class="block">
     <span class="block text-sm font-medium text-brand-heading mb-0.5">Name <span class="text-red-500">*</span></span>
@@ -29,8 +35,9 @@
       class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition"></textarea>
   </label>
 
-  <input type="hidden" name="account.custom.22PXggf2y4NV" value="general">
-  <button type="submit" data-submit-button="true"
-    class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded transition cursor-pointer">REQUEST A SERVICE</button>
+    <input type="hidden" name="account.custom.22PXggf2y4NV" value="general">
+    <button type="submit" data-submit-button="true"
+      class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded tracking-widest text-sm transition cursor-pointer">REQUEST A SERVICE</button>
+  </div>
 </form>
 <script async src='https://app.jobtread.com/web-form.js'></script>

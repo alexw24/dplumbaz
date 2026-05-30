@@ -1,7 +1,13 @@
 {{- /* Drain Cleaning form — JobTread web form */ -}}
 <form data-jobtread-web-form="true" data-key="22TM4gfQmBJNbp7eSwA7Gz7rscnFKDadGa"
-  class="bg-white rounded-lg shadow-lg p-5 space-y-3">
-  <h2 class="text-lg font-bold text-brand-heading mb-1">Schedule Drain Service</h2>
+  class="bg-white rounded-xl shadow-2xl overflow-hidden text-left">
+
+  <div class="bg-brand-accent px-5 py-3">
+    <p class="text-xs font-semibold uppercase tracking-widest text-white/80">Free Estimate</p>
+    <h2 class="text-lg font-bold text-white leading-tight">Schedule Drain Service</h2>
+  </div>
+
+  <div class="p-5 space-y-3">
 
   <div class="grid grid-cols-2 gap-3">
     <label class="block">
@@ -45,8 +51,9 @@
       class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
   </label>
 
-  <input type="hidden" name="account.custom.22PXggf2y4NV" value="drain cleaning">
-  <button type="submit" data-submit-button="true"
-    class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded transition cursor-pointer">SCHEDULE SERVICE</button>
+    <input type="hidden" name="account.custom.22PXggf2y4NV" value="drain cleaning">
+    <button type="submit" data-submit-button="true"
+      class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded tracking-widest text-sm transition cursor-pointer">SCHEDULE SERVICE</button>
+  </div>
 </form>
 <script async src='https://app.jobtread.com/web-form.js'></script>

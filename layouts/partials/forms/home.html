@@ -9,6 +9,16 @@
     <h2 class="text-lg font-bold text-white leading-tight">Request a Service</h2>
   </div>
 
+  {{- /* Quick-route to the water-quality pages — those have the structured estimate forms. Shown first so water-treatment visitors click through before filling out the general form. */ -}}
+  <div class="bg-brand-surface px-5 py-2.5 border-b border-black/5">
+    <p class="text-sm font-semibold text-brand-heading leading-snug">Here for water treatment?</p>
+    <p class="text-sm text-brand-heading leading-snug mt-0.5">
+      <a href="/water-quality/water-softeners/" class="text-brand-accent font-medium underline hover:no-underline">Softeners</a> ·
+      <a href="/water-quality/whole-home-filtration/" class="text-brand-accent font-medium underline hover:no-underline">Whole-Home</a> ·
+      <a href="/water-quality/reverse-osmosis/" class="text-brand-accent font-medium underline hover:no-underline">Reverse Osmosis</a>
+    </p>
+  </div>
+
   <div class="p-5 space-y-3">
     <label class="block">
       <span class="block text-sm font-medium text-brand-heading mb-0.5">Name <span class="text-red-500">*</span></span>
