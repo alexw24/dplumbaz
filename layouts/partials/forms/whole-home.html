@@ -75,18 +75,28 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-3">
-      <label class="block">
-        <span class="block text-sm font-medium text-brand-heading mb-0.5">Bathrooms</span>
-        <input type="number" name="location.custom.22PV6UW62Cyx"
+    <div class="grid grid-cols-2 gap-3 items-end">
+      <div>
+        <label for="whf-bathrooms" class="block text-sm font-medium text-brand-heading mb-0.5">Bathrooms</label>
+        <input id="whf-bathrooms" type="number" name="location.custom.22PV6UW62Cyx"
           class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-      </label>
-      <label class="block">
-        <span class="block text-sm font-medium text-brand-heading mb-0.5">Files &amp; photos <span class="font-normal text-gray-400">(optional)</span></span>
-        <input type="file" multiple name="account.files"
-          class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-      </label>
+      </div>
+      <div>
+        <label for="whf-loop" class="block text-sm font-medium text-brand-heading mb-0.5">Do you have a pre-plumbed softener loop?</label>
+        <select id="whf-loop" name="location.custom.22PV9jLYfUip"
+          class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+          <option value="" disabled selected>Not sure</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
     </div>
+
+    <label class="block">
+      <span class="block text-sm font-medium text-brand-heading mb-0.5">Files &amp; photos <span class="font-normal text-gray-400">(optional)</span></span>
+      <input type="file" multiple name="account.files"
+        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+    </label>
 
     <input type="hidden" name="account.custom.22PXggf2y4NV" value="whole-home-filtration">
     <button type="submit" data-submit-button="true"
