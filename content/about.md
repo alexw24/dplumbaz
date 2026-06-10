@@ -13,7 +13,7 @@ team:
   - name: Gary
     role: Owner & Plumber
     image: images/about_gary.jpeg
-    bio: Gary has been a technician and business owner for my whole life, and most of his. He first learned how to plumb from his father, making him a second generation plumber. He then widened his scope, taking on remodeling jobs as well. He first went independent in Ohio, when his wife convinced him to make the jump. They moved to Arizona in '91, and Gary spent some time learning the market and forming relationships before founding Diagnostic Plumbing.
+    bio: Gary has been a technician and business owner for my whole life, and most of his. He first learned how to plumb from his father, making him a second generation plumber. He then widened his scope, taking on remodeling jobs as well. He first went independent in Ohio, when his wife convinced him to make the jump. They moved to Arizona in '91, and Gary spent some time learning the market and forming relationships before founding Diagnostic Plumbing — the company operated as Gentry Remodeling for a stretch before settling on the name that better reflects the diagnostic approach.
   - name: Alex
     role: Owner & Plumber
     image: images/about_alex.jpeg
