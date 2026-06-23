@@ -1,16 +1,16 @@
+{{- $areas := slice -}}
+{{- range .Site.Params.serviceAreas -}}
+  {{- $areas = $areas | append (dict "@type" "City" "name" .name) -}}
+{{- end -}}
+{{- $desc := .Params.description | default .Site.Params.description -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Service"
+  "name" .Title
+  "description" $desc
+  "provider" (dict "@id" (printf "%s#business" .Site.BaseURL))
+  "areaServed" $areas
+  "url" .Permalink -}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": {{ .Title | jsonify }},
-  "description": {{ with .Params.description }}{{ . | jsonify }}{{ else }}{{ .Site.Params.description | jsonify }}{{ end }},
-  "provider": {
-    "@id": {{ printf "%s#business" .Site.BaseURL | jsonify }}
-  },
-  "areaServed": [
-    {{ range $i, $area := .Site.Params.serviceAreas }}{{ if $i }},{{ end }}
-    { "@type": "City", "name": {{ $area.name | jsonify }} }{{ end }}
-  ],
-  "url": {{ .Permalink | jsonify }}
-}
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
 </script>

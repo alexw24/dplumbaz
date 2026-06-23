@@ -1,52 +1,44 @@
+{{- $areas := slice -}}
+{{- range .Site.Params.serviceAreas -}}
+  {{- $areas = $areas | append (dict "@type" "City" "name" .name) -}}
+{{- end -}}
+{{- $credentials := slice -}}
+{{- range .Site.Params.licenses -}}
+  {{- $credentials = $credentials | append (dict
+    "@type" "EducationalOccupationalCredential"
+    "name" (printf "ROC %s — %s" .number .type)
+    "credentialCategory" "license") -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Plumber"
+  "@id" (printf "%s#business" .Site.BaseURL)
+  "name" .Site.Title
+  "alternateName" "Gentry Remodeling"
+  "url" .Site.BaseURL
+  "telephone" "+14802201266"
+  "description" .Site.Params.description
+  "image" (printf "%simages/home-hero.jpeg" .Site.BaseURL)
+  "priceRange" "$$"
+  "address" (dict
+    "@type" "PostalAddress"
+    "addressLocality" "Queen Creek"
+    "addressRegion" "AZ"
+    "addressCountry" "US")
+  "geo" (dict
+    "@type" "GeoCoordinates"
+    "latitude" 33.2486
+    "longitude" -111.6343)
+  "openingHoursSpecification" (slice (dict
+    "@type" "OpeningHoursSpecification"
+    "dayOfWeek" (slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday")
+    "opens" "06:00"
+    "closes" "19:00"))
+  "areaServed" $areas
+  "hasCredential" $credentials
+  "sameAs" (slice
+    "https://www.google.com/maps?cid=17714131891195758093"
+    "https://www.yelp.com/biz/diagnostic-plumbing-gilbert") -}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Plumber",
-  "@id": "{{ .Site.BaseURL }}#business",
-  "name": "{{ .Site.Title }}",
-  "alternateName": "Gentry Remodeling",
-  "url": "{{ .Site.BaseURL }}",
-  "telephone": "+14802201266",
-  "description": "{{ .Site.Params.description }}",
-  "image": "{{ .Site.BaseURL }}images/home-hero.jpeg",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Queen Creek",
-    "addressRegion": "AZ",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 33.2486,
-    "longitude": -111.6343
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "06:00",
-    "closes": "19:00"
-  }],
-  "areaServed": [
-    {{ range $i, $area := .Site.Params.serviceAreas }}{{ if $i }},{{ end }}
-    {
-      "@type": "City",
-      "name": "{{ $area.name }}"
-    }{{ end }}
-  ],
-  "hasCredential": [
-    {{ range $i, $lic := .Site.Params.licenses }}{{ if $i }},{{ end }}
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "ROC {{ $lic.number }} — {{ $lic.type }}",
-      "credentialCategory": "license"
-    }{{ end }}
-  ]
-}
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
 </script>
-{{- /* Add sameAs array here after GBP + Yelp profiles exist:
-  "sameAs": [
-    "https://www.google.com/maps/place/...",
-    "https://www.yelp.com/biz/..."
-  ]
-*/ -}}
