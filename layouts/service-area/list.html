@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+  {{ with .Content }}
+  <div class="prose max-w-none">
+    {{ . }}
+  </div>
+  {{ end }}
+</div>
+{{ partial "service-areas.html" . }}
+<section class="py-12 bg-brand-surface">
+  <div class="max-w-xl mx-auto px-4">
+    {{ partial "forms/location.html" . }}
+  </div>
+</section>
+{{ partial "cta.html" . }}
+{{ end }}

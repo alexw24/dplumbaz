@@ -2,6 +2,11 @@ baseURL = "https://dplumbaz.com/"
 locale = "en-us"
 title = "Diagnostic Plumbing"
 
+# Disable Hugo's default tag/category taxonomies — unused, generated empty
+# /categories/ and /tags/ pages that Google was indexing.
+disableKinds = ["taxonomy", "term"]
+[taxonomies]
+
 [security.node.permissions]
 allowAddons = ['tailwindcss', 'postcss']
 allowWorker = ['tailwindcss', 'postcss']
