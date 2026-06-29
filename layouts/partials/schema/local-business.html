@@ -14,7 +14,7 @@
   "@type" "Plumber"
   "@id" (printf "%s#business" .Site.BaseURL)
   "name" .Site.Title
-  "alternateName" "Gentry Remodeling"
+  "alternateName" (slice "Gentry Remodeling" "Gentry Plumbing" "Gentry Plumbing & Contracting")
   "url" .Site.BaseURL
   "telephone" "+14802201266"
   "description" .Site.Params.description
@@ -38,7 +38,8 @@
   "hasCredential" $credentials
   "sameAs" (slice
     "https://www.google.com/maps?cid=17714131891195758093"
-    "https://www.yelp.com/biz/diagnostic-plumbing-gilbert") -}}
+    "https://www.yelp.com/biz/diagnostic-plumbing-gilbert"
+    "https://www.mapquest.com/us/arizona/diagnostic-plumbing-354312953") -}}
 <script type="application/ld+json">
 {{ $schema | jsonify (dict "indent" "  ") | safeJS }}
 </script>
