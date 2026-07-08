@@ -4,7 +4,7 @@ meta_title: "Is Gilbert AZ Water Hard? 2024 Test Results (13 gpg)"
 description: "Gilbert's water is safe, EPA-compliant — and genuinely hard at ~13 gpg / 795 mg/L TDS. What the 2024 testing shows, from a licensed local plumber."
 slug: "is-gilbert-az-water-hard"
 date: 2026-06-20
-lastmod: 2026-06-20
+lastmod: 2026-07-08
 author: "Diagnostic Plumbing"
 keywords: ["is gilbert az water hard", "gilbert az water quality", "gilbert water hardness", "gilbert tap water"]
 type: "blog"
@@ -60,7 +60,9 @@ fixtures it wears out over time.
 
 ## So is it safe to drink?
 
-Gilbert's water **meets EPA safety standards** — there were no violations in the 2024 report. The
+Gilbert's water **meets EPA safety standards** — no water-quality violations in the 2024 report. (The
+report does disclose a few paperwork and monitoring-schedule lapses, but no contaminant ever exceeded
+a legal limit.) The
 town treats a blend of surface water (from the Salt and Verde rivers via SRP, and Colorado River
 water via the CAP canal) plus about 20 groundwater wells, with ozonation, filtration, and chlorine
 disinfection.
@@ -73,9 +75,11 @@ you drink straight from the tap:
   occurring in Arizona groundwater, and it's one of the few contaminants a standard fridge or pitcher
   filter doesn't reliably remove.
 - **PFAS ("forever chemicals").** Gilbert's 2024 monitoring detected several, including **PFOA up to
-  ~6.5 ppt and PFOS up to ~9.8 ppt.** The EPA finalized a new limit of **4 ppt** for those two in
-  2024, which water systems must meet by **2029.** Gilbert's *average* is well under that today, but
-  the peak readings are above the future limit — which is exactly why it's on the radar.
+  6.5 ppt and PFOS up to 9.8 ppt.** The EPA finalized a new limit of **4 ppt** for those two in
+  2024, which water systems must meet by **2029** (the EPA has proposed letting systems request an
+  extension to 2031). Gilbert's *average* is well under that today, and to the town's credit, the
+  peak readings came from a single well — **which Gilbert took offline as a precaution.** But it's
+  exactly why PFAS is on the radar here.
 - **Nitrate** averaged 4.27 ppm (limit 10) — fine for most homes, but worth knowing if you have an
   infant under six months.
 
