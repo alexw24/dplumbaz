@@ -1,0 +1,16 @@
+{{- $image := partial "functions/og-image.html" . -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" .Params.description
+  "datePublished" (.Date.Format "2006-01-02")
+  "dateModified" (.Lastmod.Format "2006-01-02")
+  "author" (dict "@type" "Organization" "name" (.Params.author | default "Diagnostic Plumbing"))
+  "publisher" (dict "@type" "Organization" "name" .Site.Title)
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "image" $image
+-}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>

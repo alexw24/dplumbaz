@@ -18,7 +18,7 @@
   "url" .Site.BaseURL
   "telephone" "+14802201266"
   "description" .Site.Params.description
-  "image" (printf "%simages/home-hero.jpeg" .Site.BaseURL)
+  "image" (partial "functions/og-image.html" .)
   "priceRange" "$$"
   "address" (dict
     "@type" "PostalAddress"

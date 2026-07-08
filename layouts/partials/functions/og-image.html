@@ -1,0 +1,9 @@
+{{/* Resolve the page's social-share image through the asset pipeline.
+     hero_image params and the default live in assets/images/, not static/,
+     so a plain absURL would 404 — process to a 1200x630 OG-sized permalink. */}}
+{{- $path := .Params.hero_image | default "images/home-hero.jpeg" -}}
+{{- $url := absURL $path -}}
+{{- with resources.Get $path -}}
+  {{- with .Fill "1200x630 jpg" -}}{{- $url = .Permalink -}}{{- end -}}
+{{- end -}}
+{{- return $url -}}
