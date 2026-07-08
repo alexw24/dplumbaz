@@ -93,3 +93,6 @@ src="https://www.facebook.com/tr?id=860873033014251&ev=PageView&noscript=1"
 {{ if and (eq .Type "blog") (not .IsSection) }}
   {{ partial "schema/blog-posting.html" . }}
 {{ end }}
+
+{{/* Analytics — GA4, production-only (see partials/analytics.html) */}}
+{{ partial "analytics.html" . }}

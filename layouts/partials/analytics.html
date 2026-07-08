@@ -1,0 +1,32 @@
+{{- /* GA4 — emits only in production builds and only when params.ga4 is set.
+     Conversion events:
+       phone_call_click — any tel: link (header CTA, hero, footer, body)
+       generate_lead    — JobTread web form submissions */ -}}
+{{- $id := .Site.Params.ga4 -}}
+{{- if and $id hugo.IsProduction -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', {{ $id }});
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (a) gtag('event', 'phone_call_click', {
+      link_url: a.getAttribute('href'),
+      page_location: location.href
+    });
+  }, true);
+
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (f && f.matches && f.matches('form[data-jobtread-web-form]')) {
+      gtag('event', 'generate_lead', {
+        form_key: f.getAttribute('data-key') || 'unknown',
+        page_location: location.href
+      });
+    }
+  }, true);
+</script>
+{{- end -}}

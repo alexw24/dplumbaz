@@ -13,6 +13,9 @@ allowWorker = ['tailwindcss', 'postcss']
 allowChildProcess = ['tailwindcss', 'postcss']
 
 [params]
+# GA4 Measurement ID — paste from GA admin (Data Streams → Web) to activate
+# analytics. Empty = no tracking script emitted. Only loads in production builds.
+ga4 = "G-S3ZD5VEHEY"
 phone = "(480) 220-1266"
 phoneRaw = "4802201266"
 description = "Locally owned plumbing company serving the Phoenix East Valley. Specializing in drain cleaning, water heaters, repipes, water quality solutions, and remodeling."
