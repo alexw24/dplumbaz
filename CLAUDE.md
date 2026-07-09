@@ -14,7 +14,7 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
 
 - **SSG:** Hugo — `hugo server` → http://localhost:1313/
 - **CSS:** Tailwind CSS v4 via PostCSS (`@tailwindcss/postcss`, `postcss-cli`)
-- **JS:** Alpine.js v3 (CDN) — mobile menu interactions
+- **JS:** Vanilla — mobile menu toggle only (`header.html`); no framework/CDN dependency
 - **Repo:** https://github.com/alexw24/dplumbaz (private)
 - **Hosting:** Cloudflare Pages — build: `hugo`, publish: `public/`
 
@@ -36,7 +36,7 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
 │   ├── services/_index.md + 6 service pages  # drain-cleaning, high-speed-drain-cleaning, water-heaters, repipes, plumbing-repairs, remodeling
 │   ├── residential-plumbing/_index.md        # SEO hub only — service pages live under services/
 │   ├── water-quality/_index.md + 3 service pages
-│   ├── service-area/                 # 8 city pages (url: /plumber-{city}-az/)
+│   ├── service-area/                 # 10 city pages (url: /plumber-{city}-az/, city: "<Name>" param)
 │   └── blog/_index.md
 ├── layouts/
 │   ├── _default/baseof.html          # HTML shell, calls all partials
@@ -51,28 +51,37 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
 │   ├── blog/list.html + single.html
 │   └── shortcodes/callout.html       # Callout box shortcode
 └── layouts/partials/
-    ├── head.html                     # Meta, Tailwind, Alpine.js CDN, OG/Twitter, schema
-    ├── header.html                   # Two-bar sticky header, dropdowns, mobile hamburger
+    ├── head.html                     # Meta, Tailwind, OG/Twitter, schema, hero preload
+    ├── header.html                   # Two-bar sticky header, dropdowns, vanilla-JS mobile drawer
     ├── footer.html                   # Service areas, licenses, nav, copyright
-    ├── hero.html                     # Page hero with optional bg image
+    ├── hero.html                     # Page hero with optional bg image (uses hero-picture.html)
+    ├── hero-picture.html             # Shared <picture>+overlay markup for hero.html and index.html
     ├── cta.html                      # Reusable CTA block
     ├── faq.html                      # details/summary FAQ accordion
     ├── service-areas.html            # City links grid
     ├── licenses.html                 # ROC license display block
+    ├── functions/
+    │   ├── og-image.html             # Resolves OG/Twitter image
+    │   └── hero-variants.html        # Returns sm/md/lg/fallback Fill variants for a hero image
     ├── forms/
+    │   ├── _field.html                # Shared field renderer (text/select/checkbox-group/etc, dict-driven)
+    │   ├── _top.html                  # Shared form chrome — header bar, opens <form> + fields div
+    │   ├── _bottom.html               # Shared form chrome — hidden CRM field, submit button, closes tags
     │   ├── home.html                 # Homepage contact/lead form
     │   ├── generic.html              # Generic contact form
     │   ├── drain-cleaning.html       # Drain cleaning service form
     │   ├── emergency.html            # Emergency plumbing form
     │   ├── remodeling.html           # Remodeling quote form
     │   ├── reverse-osmosis.html      # Reverse osmosis quote form
-    │   ├── location.html             # Service area / location form
+    │   ├── location.html             # Service area / location form (title uses .Params.city)
     │   ├── whole-home.html           # Whole home filtration form
     │   └── softener.html             # Water softener quote form
     └── schema/
         ├── local-business.html       # Plumber JSON-LD (every page)
         └── faq.html                  # FAQPage JSON-LD (pages with faq param)
 ```
+
+Form partials are thin per-form field lists built on `_field.html`/`_top.html`/`_bottom.html` — see a form file for the dict pattern before adding a new one. **CRM field `name`s, `data-key`s, and hidden `account.custom.22PXggf2y4NV` values must stay byte-identical** when editing these; they're JobTread integration IDs, not display strings. Reference exports for cross-checking field IDs live in `docs/jobtread-form-exports/`.
 
 ## Site Structure
 
@@ -111,12 +120,14 @@ Hugo static site for **Diagnostic Plumbing** (dplumbaz.com). Content planning li
 | Queen Creek | /plumber-queen-creek-az/ | service-area |
 | Phoenix | /plumber-phoenix-az/ | service-area |
 | San Tan Valley | /plumber-san-tan-valley-az/ | service-area |
+| Gold Canyon | /plumber-gold-canyon-az/ | service-area |
+| Apache Junction | /plumber-apache-junction-az/ | service-area |
 
 Service area pages are linked from footer + internal content, NOT primary navigation.
 
 ## Global Elements
 
-- **Header:** Sticky, two-bar. Top bar: tagline ("Servicing Maricopa and Pinal Counties") + social icons. Main bar: logo, nav dropdowns (hover desktop / Alpine.js mobile), click-to-call CTA always visible.
+- **Header:** Sticky, two-bar. Top bar: tagline ("Servicing Maricopa and Pinal Counties") + social icons. Main bar: logo, nav dropdowns (hover + focus-within desktop / vanilla-JS drawer mobile), click-to-call CTA always visible.
 - **Hero:** All pages except homepage — page title + "Request a Service" (/contact/) + "Call Us Now!" (tel:4802201266). Supports `hero_image` front matter param for bg image.
 - **Footer:** Service area city links, ROC license numbers, phone, secondary nav, copyright.
 
@@ -160,5 +171,5 @@ answer = "Another answer."
 
 ## Integrations
 
-- **JobTread** — CRM. Forms submit to JobTread API for lead creation. See `layouts/partials/forms/` for service-specific forms.
+- **JobTread** — CRM. Forms submit to JobTread API for lead creation. See `layouts/partials/forms/` for service-specific forms; reference HTML exports of the original forms live in `docs/jobtread-form-exports/`.
 - **Cloudflare Pages** — auto-deploy from GitHub on push to main.
