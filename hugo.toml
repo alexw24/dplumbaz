@@ -5,7 +5,10 @@ title = "Diagnostic Plumbing"
 # Disable Hugo's default tag/category taxonomies — unused, generated empty
 # /categories/ and /tags/ pages that Google was indexing.
 disableKinds = ["taxonomy", "term"]
-[taxonomies]
+
+[outputs]
+home = ["html"]
+section = ["html"]
 
 [security.node.permissions]
 allowAddons = ['tailwindcss', 'postcss']
@@ -92,7 +95,8 @@ weight = 2
 [[menus.main]]
 name = "Blog"
 url = "/blog/"
-weight = 25
+parent = "About Us"
+weight = 1
 
 [[menus.main]]
 name = "Services"
