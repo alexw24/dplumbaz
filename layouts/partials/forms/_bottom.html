@@ -1,0 +1,12 @@
+{{- /*
+  Shared form chrome — closing half. Params (via dict):
+    source_value  — value for the hidden account.custom.22PXggf2y4NV field
+    button_label  — submit button text
+  Pairs with forms/_top.html, which leaves <form> and the fields <div> open.
+*/ -}}
+    <input type="hidden" name="account.custom.22PXggf2y4NV" value="{{ .source_value }}">
+    <button type="submit" data-submit-button="true"
+      class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded tracking-widest text-sm transition cursor-pointer">{{ .button_label }}</button>
+  </div>
+</form>
+<script async src='https://app.jobtread.com/web-form.js'></script>

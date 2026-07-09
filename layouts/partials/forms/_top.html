@@ -1,0 +1,29 @@
+{{- /*
+  Shared form chrome — opening half. Params (via dict):
+    data_key         — JobTread CRM form ID (required)
+    success_message  — optional data-success-message text
+    title            — h2 shown in the accent header bar
+    quick_route      — bool, shows the water-quality quick-route box (home.html only)
+  Leaves <form> and the fields <div> open; close with forms/_bottom.html.
+*/ -}}
+<form data-jobtread-web-form="true" data-key="{{ .data_key }}"
+  {{ with .success_message }}data-success-message="{{ . }}"
+  {{ end }}class="bg-white rounded-xl shadow-2xl overflow-hidden text-left">
+
+  <div class="bg-brand-accent px-5 py-3">
+    <p class="text-xs font-semibold uppercase tracking-widest text-white/80">Free Estimate</p>
+    <h2 class="text-lg font-bold text-white leading-tight">{{ .title }}</h2>
+  </div>
+
+  {{ if .quick_route }}
+  <div class="bg-brand-surface px-5 py-2.5 border-b border-black/5">
+    <p class="text-sm font-semibold text-brand-heading leading-snug">Here for water treatment?</p>
+    <p class="text-sm text-brand-heading leading-snug mt-0.5">
+      <a href="/water-quality/water-softeners/" class="text-brand-accent font-medium underline hover:no-underline">Softeners</a> ·
+      <a href="/water-quality/whole-home-filtration/" class="text-brand-accent font-medium underline hover:no-underline">Whole-Home</a> ·
+      <a href="/water-quality/reverse-osmosis/" class="text-brand-accent font-medium underline hover:no-underline">Reverse Osmosis</a>
+    </p>
+  </div>
+  {{ end }}
+
+  <div class="p-5 space-y-3">
