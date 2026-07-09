@@ -27,8 +27,7 @@ We believe in explaining what we find and giving you options. We'll show you wha
 {{< /callout >}}
 
 <div class="text-center mt-6 -mb-4">
-  <a href="#how-we-work" 
-     onclick="smoothScroll('how-we-work'); return false"
+  <a href="#how-we-work"
      class="inline-block border-2 border-brand-heading text-brand-heading hover:bg-brand-heading hover:text-white font-semibold rounded px-6 py-3 transition-colors cursor-pointer">
     Learn More
   </a>

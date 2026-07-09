@@ -25,9 +25,6 @@
 {{ end }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $css.Data.Integrity }}"{{ end }}>
 
-{{/* Alpine.js for interactive components */}}
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 {{/* Open Graph image — resolved via asset pipeline (see functions/og-image.html) */}}
 {{ $ogImage := partial "functions/og-image.html" . }}
 <meta property="og:image" content="{{ $ogImage }}">
@@ -38,7 +35,6 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 {{/* Preconnect for third-party origins */}}
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://app.jobtread.com">
 
 {{/* Hero image preload — lets browser fetch before parsing body */}}
