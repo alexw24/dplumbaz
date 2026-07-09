@@ -1,63 +1,29 @@
 {{- /* Homepage hero form — JobTread web form */ -}}
-<form data-jobtread-web-form="true" data-key="22TM8g8W5YFDSmu6mvMgrCYnzHXEcuNiJj"
-  data-success-message="Thank you! We'll be in contact soon."
-  class="bg-white rounded-xl shadow-2xl overflow-hidden text-left">
-
-  {{- /* Accent header bar */ -}}
-  <div class="bg-brand-accent px-5 py-3">
-    <p class="text-xs font-semibold uppercase tracking-widest text-white/80">Free Estimate</p>
-    <h2 class="text-lg font-bold text-white leading-tight">Request a Service</h2>
-  </div>
-
-  {{- /* Quick-route to the water-quality pages — those have the structured estimate forms. Shown first so water-treatment visitors click through before filling out the general form. */ -}}
-  <div class="bg-brand-surface px-5 py-2.5 border-b border-black/5">
-    <p class="text-sm font-semibold text-brand-heading leading-snug">Here for water treatment?</p>
-    <p class="text-sm text-brand-heading leading-snug mt-0.5">
-      <a href="/water-quality/water-softeners/" class="text-brand-accent font-medium underline hover:no-underline">Softeners</a> ·
-      <a href="/water-quality/whole-home-filtration/" class="text-brand-accent font-medium underline hover:no-underline">Whole-Home</a> ·
-      <a href="/water-quality/reverse-osmosis/" class="text-brand-accent font-medium underline hover:no-underline">Reverse Osmosis</a>
-    </p>
-  </div>
-
-  <div class="p-5 space-y-3">
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Name <span class="text-red-500">*</span></span>
-      <input type="text" required name="contact.name"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
+{{ partial "forms/_top.html" (dict
+  "data_key" "22TM8g8W5YFDSmu6mvMgrCYnzHXEcuNiJj"
+  "success_message" "Thank you! We'll be in contact soon."
+  "title" "Request a Service"
+  "quick_route" true
+) }}
+    {{ partial "forms/_field.html" (dict "label" "Name" "name" "contact.name" "type" "text" "required" true) }}
 
     <div class="grid grid-cols-2 gap-3">
-      <label class="block">
-        <span class="block text-sm font-medium text-brand-heading mb-0.5">Email</span>
-        <input type="email" name="contact.custom.22NsehctsKJM"
-          class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-      </label>
-      <label class="block">
-        <span class="block text-sm font-medium text-brand-heading mb-0.5">Phone <span class="text-red-500">*</span></span>
-        <input type="tel" required name="contact.custom.22Nsehd3v83v"
-          class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-      </label>
+      {{ partial "forms/_field.html" (dict "label" "Email" "name" "contact.custom.22NsehctsKJM" "type" "email") }}
+      {{ partial "forms/_field.html" (dict "label" "Phone" "name" "contact.custom.22Nsehd3v83v" "type" "tel" "required" true) }}
     </div>
 
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">New client?</span>
-      <select name="contact.custom.22PV9rSa3MNb"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-        <option value="" disabled selected>Select...</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-    </label>
+    {{ partial "forms/_field.html" (dict
+      "label" "New client?"
+      "name" "contact.custom.22PV9rSa3MNb"
+      "type" "select"
+      "options" (slice "Yes" "No")
+    ) }}
 
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Write us a message</span>
-      <textarea name="account.custom.22PTccENt3HH" rows="2" placeholder="What can we help you with? Describe the issue or service you need..."
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition"></textarea>
-    </label>
-
-    <input type="hidden" name="account.custom.22PXggf2y4NV" value="general">
-    <button type="submit" data-submit-button="true"
-      class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded tracking-widest text-sm transition cursor-pointer">SCHEDULE A SERVICE</button>
-  </div>
-</form>
-<script async src='https://app.jobtread.com/web-form.js'></script>
+    {{ partial "forms/_field.html" (dict
+      "label" "Write us a message"
+      "name" "account.custom.22PTccENt3HH"
+      "type" "textarea"
+      "rows" 2
+      "placeholder" "What can we help you with? Describe the issue or service you need..."
+    ) }}
+{{ partial "forms/_bottom.html" (dict "source_value" "general" "button_label" "SCHEDULE A SERVICE") }}

@@ -4,6 +4,7 @@ meta_title: "Plumber in Mesa, AZ | Diagnostic Plumbing"
 description: "Locally owned, triple-licensed plumber serving Mesa, AZ. Drain cleaning, repipes, water heaters, water softeners & remodeling. ROC #327364. Call (480) 220-1266."
 url: "/plumber-mesa-az/"
 type: "service-area"
+city: "Mesa"
 faq:
   - question: "Do you work on older homes with galvanized pipes in Mesa?"
     answer: "Yes — this is one of the most common calls we get in Mesa. Homes built in the 1950s through 1970s in areas like Dobson Ranch and Alta Mesa often still have original galvanized steel pipes, which corrode from the inside out over time. We diagnose the extent of the problem and recommend a full or partial repipe using copper or PEX. We hold ROC license #327364 (CR-37 Plumbing) and #332463 (B-3 General Remodeling), so we handle the plumbing and any wall patching or finish work ourselves — no extra subcontractors."

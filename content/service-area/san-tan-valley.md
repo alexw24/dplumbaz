@@ -4,6 +4,7 @@ meta_title = "Plumber in San Tan Valley, AZ | Diagnostic Plumbing"
 description = "Locally owned plumber serving San Tan Valley & Pinal County. Well water treatment, water softeners, drain cleaning, water heaters & repipes. Call (480) 220-1266."
 url = "/plumber-san-tan-valley-az/"
 type = "service-area"
+city = "San Tan Valley"
 
 [[faq]]
 question = "My San Tan Valley home is on a private well. What water treatment do you recommend?"

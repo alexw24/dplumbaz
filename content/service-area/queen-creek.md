@@ -4,6 +4,7 @@ meta_title: "Plumber in Queen Creek, AZ | Diagnostic Plumbing"
 description: "Locally owned, triple-licensed plumber serving Queen Creek, AZ. Water softeners, drain cleaning, water heaters, repipes & remodeling. ROC #327364. Call (480) 220-1266."
 url: "/plumber-queen-creek-az/"
 type: "service-area"
+city: "Queen Creek"
 
 faq:
   - question: "Do new homes in Queen Creek really need a water softener?"

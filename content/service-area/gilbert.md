@@ -4,6 +4,7 @@ meta_title: "Plumber in Gilbert, AZ | Diagnostic Plumbing"
 description: "Licensed plumber serving Gilbert, AZ. Drain cleaning, water softeners, water heaters, repipes & remodeling. Locally owned, triple-licensed. Call (480) 220-1266."
 url: "/plumber-gilbert-az/"
 type: "service-area"
+city: "Gilbert"
 faq:
   - question: "Why is my water leaving white residue on fixtures in Gilbert?"
     answer: "Gilbert's municipal water is extremely hard — typically 200–250 mg/L of dissolved minerals. That white buildup on faucets, showerheads, and appliances is calcium and magnesium scale. A whole-home water softener eliminates the problem at the source and extends the life of your water heater, dishwasher, and pipes. We can walk you through your options and size a system for your home."

@@ -1,43 +1,20 @@
 {{- /* Generic contact form — same fields as home minus "new client" radio */ -}}
-<form data-jobtread-web-form="true" data-key="22TM8g8W5YFDSmu6mvMgrCYnzHXEcuNiJj"
-  data-success-message="Thank you! We'll be in contact soon."
-  class="bg-white rounded-xl shadow-2xl overflow-hidden text-left">
+{{ partial "forms/_top.html" (dict
+  "data_key" "22TM8g8W5YFDSmu6mvMgrCYnzHXEcuNiJj"
+  "success_message" "Thank you! We'll be in contact soon."
+  "title" "Request a Service"
+) }}
+    {{ partial "forms/_field.html" (dict "label" "Name" "name" "contact.name" "type" "text" "required" true) }}
 
-  <div class="bg-brand-accent px-5 py-3">
-    <p class="text-xs font-semibold uppercase tracking-widest text-white/80">Free Estimate</p>
-    <h2 class="text-lg font-bold text-white leading-tight">Request a Service</h2>
-  </div>
+    <div class="grid grid-cols-2 gap-3">
+      {{ partial "forms/_field.html" (dict "label" "Email" "name" "contact.custom.22NsehctsKJM" "type" "email") }}
+      {{ partial "forms/_field.html" (dict "label" "Phone" "name" "contact.custom.22Nsehd3v83v" "type" "tel" "required" true) }}
+    </div>
 
-  <div class="p-5 space-y-3">
-
-  <label class="block">
-    <span class="block text-sm font-medium text-brand-heading mb-0.5">Name <span class="text-red-500">*</span></span>
-    <input type="text" required name="contact.name"
-      class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-  </label>
-
-  <div class="grid grid-cols-2 gap-3">
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Email</span>
-      <input type="email" name="contact.custom.22NsehctsKJM"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Phone <span class="text-red-500">*</span></span>
-      <input type="tel" required name="contact.custom.22Nsehd3v83v"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
-  </div>
-
-  <label class="block">
-    <span class="block text-sm font-medium text-brand-heading mb-0.5">Message</span>
-    <textarea name="account.custom.22PTccENt3HH" rows="2"
-      class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition"></textarea>
-  </label>
-
-    <input type="hidden" name="account.custom.22PXggf2y4NV" value="general">
-    <button type="submit" data-submit-button="true"
-      class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded tracking-widest text-sm transition cursor-pointer">REQUEST A SERVICE</button>
-  </div>
-</form>
-<script async src='https://app.jobtread.com/web-form.js'></script>
+    {{ partial "forms/_field.html" (dict
+      "label" "Message"
+      "name" "account.custom.22PTccENt3HH"
+      "type" "textarea"
+      "rows" 2
+    ) }}
+{{ partial "forms/_bottom.html" (dict "source_value" "general" "button_label" "REQUEST A SERVICE") }}

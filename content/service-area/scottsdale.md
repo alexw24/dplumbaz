@@ -4,6 +4,7 @@ meta_title: "Plumber in Scottsdale, AZ | Diagnostic Plumbing"
 description: "Triple-licensed plumber serving Scottsdale, AZ. Full remodels, water quality systems, drain cleaning, repipes & emergency plumbing. ROC #327364. Call (480) 220-1266."
 url: "/plumber-scottsdale-az/"
 type: "service-area"
+city: "Scottsdale"
 faq:
   - question: "Can you handle a full bathroom remodel in my Scottsdale home?"
     answer: "Yes, and this is where our triple license makes a real difference. Most plumbers hand off the rest of the project to a general contractor, which means multiple bids, multiple schedules, and multiple points of contact. Because we hold a B-3 General Remodeling license (#332463) and a CR-61 Carpentry license (#327365) alongside our CR-37 Plumbing license (#327364), we can manage the complete bathroom or kitchen remodel — rough-in plumbing, finish plumbing, tile, cabinetry, and finish carpentry — under a single contract. Call us at (480) 220-1266 to discuss your project."

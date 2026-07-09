@@ -4,6 +4,7 @@ meta_title: "Plumber in Chandler, AZ | Diagnostic Plumbing"
 description: "Licensed plumber serving Chandler, AZ. Repipes, drain cleaning, water softeners, water heaters & remodeling. Locally owned, triple-licensed. Call (480) 220-1266."
 url: "/plumber-chandler-az/"
 type: "service-area"
+city: "Chandler"
 faq:
   - question: "My Chandler home was built in the 1970s or 80s — do I need to worry about the pipes?"
     answer: "Quite possibly, yes. Homes from that era were often built with galvanized steel water supply lines, which corrode from the inside over time. Warning signs include discolored water (brown or reddish tint), noticeably lower pressure than you used to have, and recurring pinhole leaks. A repipe with modern PEX eliminates the problem permanently. We inspect older Chandler homes regularly and can give you an honest assessment of whether yours needs attention soon or can wait."

@@ -4,6 +4,7 @@ meta_title: "Plumber in Tempe, AZ | Diagnostic Plumbing"
 description: "Locally owned, triple-licensed plumber serving Tempe, AZ. Drain cleaning, repipes, water heaters, water softeners & remodeling. ROC #327364. Call (480) 220-1266."
 url: "/plumber-tempe-az/"
 type: "service-area"
+city: "Tempe"
 
 faq:
   - question: "Why do drains clog so often in older Tempe homes?"

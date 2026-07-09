@@ -4,6 +4,7 @@ meta_title = "Plumber in Apache Junction, AZ | Diagnostic Plumbing"
 description = "Locally owned, triple-licensed plumber serving Apache Junction, AZ. Manufactured home plumbing, water softeners, water heaters, repipes & drain cleaning. Call (480) 220-1266."
 url = "/plumber-apache-junction-az/"
 type = "service-area"
+city = "Apache Junction"
 
 [[faq]]
 question = "Do you work on manufactured homes and mobile homes in Apache Junction?"

@@ -1,107 +1,54 @@
 {{- /* Water Softener form — JobTread web form */ -}}
-<form data-jobtread-web-form="true" data-key="22TM8cM7HHiGi4vdBfNeuitMDzc5zEB4zQ"
-  data-success-message="Thank you! We'll contact you shortly with options tailored to water test results in your location."
-  class="bg-white rounded-xl shadow-2xl overflow-hidden text-left">
-
-  <div class="bg-brand-accent px-5 py-3">
-    <p class="text-xs font-semibold uppercase tracking-widest text-white/80">Free Estimate</p>
-    <h2 class="text-lg font-bold text-white leading-tight">Get a Water Softener Quote</h2>
-  </div>
-
-  <div class="p-5 space-y-3">
-
-  <div class="grid grid-cols-2 gap-3">
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Name <span class="text-red-500">*</span></span>
-      <input type="text" required name="contact.name"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Phone <span class="text-red-500">*</span></span>
-      <input type="tel" required name="contact.custom.22Nsehd3v83v"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
-  </div>
-
-  <div class="grid grid-cols-2 gap-3">
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Email <span class="text-red-500">*</span></span>
-      <input type="email" required name="contact.custom.22NsehctsKJM"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
-    <label class="block">
-      <span class="block text-sm font-medium text-brand-heading mb-0.5">Address / ZIP <span class="text-red-500">*</span></span>
-      <input type="text" required name="location.address" autocomplete="street-address"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-    </label>
-  </div>
-
-  <div>
-    <span class="block text-sm font-medium text-brand-heading mb-0.5">Whole Home Addons <span class="font-normal text-gray-400">(optional, learn about each filter below)</span></span>
-    <div class="rounded border border-gray-200 overflow-hidden">
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV7qnEkJSj" value="5 Micron Sediment Filter" class="shrink-0">
-        <span>5 Micron Sediment Filter</span>
-      </label>
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV7qnEkJSj" value="Carbon Filter (Activated or Catalytic depending on your city's water treatment methods)" class="shrink-0">
-        <span>Carbon Filter</span>
-      </label>
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV7qnEkJSj" value="UV Filter" class="shrink-0">
-        <span>UV Filter</span>
-      </label>
+{{ partial "forms/_top.html" (dict
+  "data_key" "22TM8cM7HHiGi4vdBfNeuitMDzc5zEB4zQ"
+  "success_message" "Thank you! We'll contact you shortly with options tailored to water test results in your location."
+  "title" "Get a Water Softener Quote"
+) }}
+    <div class="grid grid-cols-2 gap-3">
+      {{ partial "forms/_field.html" (dict "label" "Name" "name" "contact.name" "type" "text" "required" true) }}
+      {{ partial "forms/_field.html" (dict "label" "Phone" "name" "contact.custom.22Nsehd3v83v" "type" "tel" "required" true) }}
     </div>
-  </div>
 
-  <div>
-    <span class="block text-sm font-medium text-brand-heading mb-0.5">What are your goals?</span>
-    <div class="rounded border border-gray-200 overflow-hidden">
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV9iPYXdgk" value="Soften water" class="shrink-0">
-        <span>Soften water</span>
-      </label>
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV9iPYXdgk" value="Filtration in the whole house" class="shrink-0">
-        <span>Whole house filtration</span>
-      </label>
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV9iPYXdgk" value="Top quality drinkable water at home" class="shrink-0">
-        <span>Top quality drinking water</span>
-      </label>
-      <label class="flex items-center gap-2 py-1.5 px-2 text-sm cursor-pointer hover:bg-brand-nav-hover">
-        <input type="checkbox" name="job.custom.22PV9iPYXdgk" value="Other - please let us know when we get connected." class="shrink-0">
-        <span>Other</span>
-      </label>
+    <div class="grid grid-cols-2 gap-3">
+      {{ partial "forms/_field.html" (dict "label" "Email" "name" "contact.custom.22NsehctsKJM" "type" "email" "required" true) }}
+      {{ partial "forms/_field.html" (dict "label" "Address / ZIP" "name" "location.address" "type" "text" "required" true "autocomplete" "street-address") }}
     </div>
-  </div>
 
-  <div class="grid grid-cols-2 gap-3 items-end">
-    <div>
-      <label for="softener-bathrooms" class="block text-sm font-medium text-brand-heading mb-0.5">Bathrooms</label>
-      <input id="softener-bathrooms" type="number" name="location.custom.22PV6UW62Cyx"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
+    {{ partial "forms/_field.html" (dict
+      "label" "Whole Home Addons"
+      "name" "job.custom.22PV7qnEkJSj"
+      "type" "checkbox-group"
+      "optional_note" "optional, learn about each filter below"
+      "options" (slice
+        (dict "value" "5 Micron Sediment Filter" "label" "5 Micron Sediment Filter")
+        (dict "value" "Carbon Filter (Activated or Catalytic depending on your city's water treatment methods)" "label" "Carbon Filter")
+        (dict "value" "UV Filter" "label" "UV Filter")
+      )
+    ) }}
+
+    {{ partial "forms/_field.html" (dict
+      "label" "What are your goals?"
+      "name" "job.custom.22PV9iPYXdgk"
+      "type" "checkbox-group"
+      "options" (slice
+        (dict "value" "Soften water" "label" "Soften water")
+        (dict "value" "Filtration in the whole house" "label" "Whole house filtration")
+        (dict "value" "Top quality drinkable water at home" "label" "Top quality drinking water")
+        (dict "value" "Other - please let us know when we get connected." "label" "Other")
+      )
+    ) }}
+
+    <div class="grid grid-cols-2 gap-3 items-end">
+      {{ partial "forms/_field.html" (dict "id" "softener-bathrooms" "label" "Bathrooms" "name" "location.custom.22PV6UW62Cyx" "type" "number") }}
+      {{ partial "forms/_field.html" (dict
+        "id" "softener-loop"
+        "label" "Do you have a pre-plumbed softener loop?"
+        "name" "location.custom.22PV9jLYfUip"
+        "type" "select"
+        "placeholder" "Not sure"
+        "options" (slice "Yes" "No")
+      ) }}
     </div>
-    <div>
-      <label for="softener-loop" class="block text-sm font-medium text-brand-heading mb-0.5">Do you have a pre-plumbed softener loop?</label>
-      <select id="softener-loop" name="location.custom.22PV9jLYfUip"
-        class="w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-        <option value="" disabled selected>Not sure</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-    </div>
-  </div>
 
-  <label class="block">
-    <span class="block text-sm font-medium text-brand-heading mb-0.5">Photos <span class="font-normal text-gray-400">(optional)</span></span>
-    <input type="file" multiple name="account.files"
-      class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-brand-accent transition">
-  </label>
-
-    <input type="hidden" name="account.custom.22PXggf2y4NV" value="water-softener">
-    <button type="submit" data-submit-button="true"
-      class="w-full bg-brand-accent hover:bg-brand-heading text-white font-bold py-2.5 rounded tracking-widest text-sm transition cursor-pointer">GET A QUOTE</button>
-  </div>
-</form>
-<script async src='https://app.jobtread.com/web-form.js'></script>
+    {{ partial "forms/_field.html" (dict "label" "Photos" "name" "account.files" "type" "file" "optional_note" "optional") }}
+{{ partial "forms/_bottom.html" (dict "source_value" "water-softener" "button_label" "GET A QUOTE") }}

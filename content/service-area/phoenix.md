@@ -4,6 +4,7 @@ meta_title = "Plumber in Phoenix, AZ | Diagnostic Plumbing"
 description = "Locally owned, triple-licensed plumber serving east Phoenix, Ahwatukee & Arcadia. Repairs, repipes, drain cleaning, water softeners & remodeling. Call (480) 220-1266."
 url = "/plumber-phoenix-az/"
 type = "service-area"
+city = "Phoenix"
 
 [[faq]]
 question = "Do you serve all of Phoenix, or just the east side?"

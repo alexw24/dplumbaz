@@ -4,6 +4,7 @@ meta_title = "Plumber in Gold Canyon, AZ | Diagnostic Plumbing"
 description = "Locally owned, triple-licensed plumber serving Gold Canyon, AZ. Water softeners, water heaters, repipes, drain cleaning & more. Hard water specialists. Call (480) 220-1266."
 url = "/plumber-gold-canyon-az/"
 type = "service-area"
+city = "Gold Canyon"
 
 [[faq]]
 question = "My Gold Canyon home was built in the 1990s — do I have polybutylene pipes?"
