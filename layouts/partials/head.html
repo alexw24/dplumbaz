@@ -41,12 +41,10 @@
 {{ with .Params.hero_image }}
   {{ $img := resources.Get . }}
   {{ with $img }}
-    {{ $sm := .Fill "640x360 webp" }}
-    {{ $md := .Fill "1024x420 webp" }}
-    {{ $lg := .Fill "1920x640 webp" }}
+    {{ $v := partial "functions/hero-variants.html" . }}
     <link rel="preload" as="image"
-          href="{{ $lg.RelPermalink }}"
-          imagesrcset="{{ $sm.RelPermalink }} 640w, {{ $md.RelPermalink }} 1024w, {{ $lg.RelPermalink }} 1920w"
+          href="{{ $v.lg.RelPermalink }}"
+          imagesrcset="{{ $v.sm.RelPermalink }} 640w, {{ $v.md.RelPermalink }} 1024w, {{ $v.lg.RelPermalink }} 1920w"
           imagesizes="100vw">
   {{ end }}
 {{ end }}

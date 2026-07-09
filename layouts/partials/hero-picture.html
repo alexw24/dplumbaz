@@ -1,0 +1,18 @@
+{{- /* Renders the absolute-positioned <picture> + overlay div for a page's hero_image param. Takes the page context. Used by hero.html and index.html. */ -}}
+{{- with .Params.hero_image -}}
+  {{- $img := resources.Get . -}}
+  {{- with $img -}}
+    {{- $v := partial "functions/hero-variants.html" . -}}
+    <picture>
+      <source type="image/webp"
+              srcset="{{ $v.sm.RelPermalink }} 640w, {{ $v.md.RelPermalink }} 1024w, {{ $v.lg.RelPermalink }} 1920w"
+              sizes="100vw">
+      <img src="{{ $v.fallback.RelPermalink }}"
+           alt=""
+           class="absolute inset-0 h-full w-full object-cover"
+           fetchpriority="high"
+           decoding="sync">
+    </picture>
+    <div class="absolute inset-0 bg-brand-heading/45" aria-hidden="true"></div>
+  {{- end -}}
+{{- end -}}

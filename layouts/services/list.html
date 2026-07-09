@@ -8,18 +8,6 @@
   {{ $urls := slice }}
   {{ if .Params.grid_urls }}
     {{ $urls = .Params.grid_urls }}
-  {{ else if eq .Section "services" }}
-    {{ $urls = slice
-      "/services/drain-cleaning"
-      "/services/high-speed-drain-cleaning"
-      "/services/water-heaters"
-      "/services/repipes"
-      "/services/plumbing-repairs"
-      "/services/remodeling"
-      "/water-quality/water-softeners"
-      "/water-quality/whole-home-filtration"
-      "/water-quality/reverse-osmosis"
-    }}
   {{ else }}
     {{ range .Pages }}{{ $urls = $urls | append .RelPermalink }}{{ end }}
   {{ end }}

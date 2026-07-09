@@ -16,7 +16,7 @@
   "name" .Site.Title
   "alternateName" (slice "Gentry Remodeling" "Gentry Plumbing" "Gentry Plumbing & Contracting")
   "url" .Site.BaseURL
-  "telephone" "+14802201266"
+  "telephone" (printf "+1%s" .Site.Params.phoneRaw)
   "description" .Site.Params.description
   "image" (partial "functions/og-image.html" .)
   "priceRange" "$$"

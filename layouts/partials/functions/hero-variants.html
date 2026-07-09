@@ -1,0 +1,7 @@
+{{- /* Takes a resolved image resource, returns a dict of sm/md/lg/fallback Fill variants shared by the hero preload and hero-picture partials. */ -}}
+{{- $img := . -}}
+{{- $sm := $img.Fill "640x360 webp" -}}
+{{- $md := $img.Fill "1024x420 webp" -}}
+{{- $lg := $img.Fill "1920x640 webp" -}}
+{{- $fallback := $img.Fill "1920x640" -}}
+{{- return dict "sm" $sm "md" $md "lg" $lg "fallback" $fallback -}}
