@@ -104,7 +104,7 @@
 
     {{/* Mobile nav drawer */}}
     <nav id="mobile-nav"
-         class="lg:hidden border-t border-gray-100 bg-brand-nav overflow-y-auto overscroll-contain max-h-[calc(100vh-7rem)]"
+         class="lg:hidden border-t border-gray-100 bg-brand-nav overflow-y-auto overscroll-contain"
          aria-label="Mobile navigation"
          hidden>
       <ul class="px-4 pt-3 pb-16 space-y-1">
@@ -140,11 +140,19 @@
 
   <script>
     const btn = document.getElementById('menu-btn'), nav = document.getElementById('mobile-nav');
+    // Fill from the drawer's top edge to the bottom of the viewport. The header
+    // offset is measured (exact regardless of header height), but the height is
+    // expressed with the dvh unit so the browser recomputes it live as mobile
+    // browser chrome (e.g. Safari's toolbar) shows/hides — a fixed px height would
+    // leave a strip of background showing when the toolbar collapses.
+    const sizeNav = () => { nav.style.height = 'calc(100dvh - ' + Math.round(nav.getBoundingClientRect().top) + 'px)'; };
     btn.addEventListener('click', () => {
       const open = nav.toggleAttribute('hidden') === false;
       btn.setAttribute('aria-expanded', open);
       document.getElementById('icon-open').classList.toggle('hidden', open);
       document.getElementById('icon-close').classList.toggle('hidden', !open);
+      if (open) sizeNav();
     });
+    window.addEventListener('resize', () => { if (!nav.hidden) sizeNav(); });
   </script>
 </header>
