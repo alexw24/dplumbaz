@@ -8,13 +8,13 @@
      brand-accent  : eyebrows, links, icons, role labels
      brand-surface : alternate section backgrounds (off-white)
   ────────────────────────────────────────────────────────────── */
-  --color-brand-heading: #3d5e2e;   /* deep earthy green — top bar, headings */
-  --color-brand-accent:  #537a44;   /* medium earthy green — links, icons, CTA */
-  --color-brand-surface: #e8dcc6;   /* warm tan — alternate section backgrounds */
-  --color-brand-cta:     #e8650a;   /* strong orange — call CTA */
-  --color-brand-cta-hover: #c4520a; /* darker orange — CTA hover */
-  --color-brand-nav:     #f2e9d5;   /* light warm tan — nav bar */
-  --color-brand-nav-hover: #e2d9c0; /* warm tan hover — nav link backgrounds */
+--color-brand-heading: #1c3d5a;   /* trade navy — top bar, headings */
+--color-brand-accent:  #2c6396;   /* work-shirt blue — links, icons, CTA */
+--color-brand-surface: #e8eef3;   /* cool off-white — alternate section backgrounds */
+--color-brand-cta:     #f2600c;   /* hi-vis orange — call CTA */
+--color-brand-cta-hover: #cf4d05; /* darker orange — CTA hover */
+--color-brand-nav:     #f3f7fa;   /* pale blue-white — nav bar */
+--color-brand-nav-hover: #dfe9f1; /* pale blue hover — nav link backgrounds */
 }
 
 html {
