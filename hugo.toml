@@ -89,14 +89,21 @@ weight = 1
 
 [[menus.main]]
 name = "About Us"
+identifier = "about-us"
 url = "/about/"
 weight = 2
 
 [[menus.main]]
+name = "About Us"
+url = "/about/"
+parent = "about-us"
+weight = 1
+
+[[menus.main]]
 name = "Blog"
 url = "/blog/"
-parent = "About Us"
-weight = 1
+parent = "about-us"
+weight = 2
 
 [[menus.main]]
 name = "Services"
@@ -107,31 +114,31 @@ weight = 3
 name = "Drain Cleaning"
 url = "/services/drain-cleaning/"
 parent = "Services"
-weight = 1
+weight = 2
 
 [[menus.main]]
 name = "Water Heaters"
 url = "/services/water-heaters/"
 parent = "Services"
-weight = 2
+weight = 3
 
 [[menus.main]]
 name = "Repipes"
 url = "/services/repipes/"
 parent = "Services"
-weight = 3
+weight = 4
 
 [[menus.main]]
 name = "Plumbing Repairs"
 url = "/services/plumbing-repairs/"
 parent = "Services"
-weight = 4
+weight = 5
 
 [[menus.main]]
 name = "Remodeling"
 url = "/services/remodeling/"
 parent = "Services"
-weight = 5
+weight = 6
 
 [[menus.main]]
 name = "Water Quality"
@@ -139,22 +146,28 @@ url = "/water-quality/"
 weight = 4
 
 [[menus.main]]
+name = "Water Quality Overview"
+url = "/water-quality/"
+parent = "Water Quality"
+weight = 1
+
+[[menus.main]]
 name = "Water Softeners"
 url = "/water-quality/water-softeners/"
 parent = "Water Quality"
-weight = 1
+weight = 2
 
 [[menus.main]]
 name = "Whole Home Filtration"
 url = "/water-quality/whole-home-filtration/"
 parent = "Water Quality"
-weight = 2
+weight = 3
 
 [[menus.main]]
 name = "Reverse Osmosis"
 url = "/water-quality/reverse-osmosis/"
 parent = "Water Quality"
-weight = 3
+weight = 4
 
 [[menus.main]]
 name = "Commercial"
